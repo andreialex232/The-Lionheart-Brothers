@@ -1,0 +1,355 @@
+/* Crimson Pro */
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&display=swap");
+
+/* Crimson Text */
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap");
+
+:root {
+  /* Dimensions */
+  --width-full: 100%;
+  --width-12col: 1200px;
+
+  /* Grid Settings */
+  --grid-gap: 10px;
+  --padding-default: 20px;
+
+  /* Background color */
+  --primary-background-color: #e5e2d9;
+  --background-color-nav: #e5e2d9;
+
+  /* Text colors */
+  --primary-text-color: #905654;
+  --secondary-text-color: #d2a17b;
+  --third--text-color: #e5e2d9;
+  --forth-text-color: #e5e2d9cc; /* 80% opacity */
+
+  /* Color Swatches */
+  --green-color: #a8c79b;
+  --brown-color: #d2a17b;
+  --purple-color: #b0a9dc;
+  --dark-brown-color: #905654;
+}
+
+/* Navigation style */
+.navigation {
+  background-color: var(--background-color-nav);
+  position: absolute;
+  z-index: 10;
+  width: var(--width-full);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navigation.fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.menu-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: var(--width-12col);
+  height: 80px;
+}
+
+.menu-container ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.menu-container a {
+  padding: 0 10px;
+  text-decoration: none;
+  font-size: 20px;
+  color: var(--primary-text-color);
+  transition: color 0.3s ease-in-out;
+  display: flex;
+  padding: 0 10px;
+}
+
+.menu-container ul li a:hover {
+  color: var(--secondary-text-color);
+}
+
+.navigation.fixed svg {
+  height: 40px;
+  width: 40px;
+}
+
+.logo-navbar img {
+  cursor: pointer;
+  height: auto;
+}
+
+/* --- Mobile Menu & Overlay Setup --- */
+/* The transparent overlay that catches clicks outside the menu */
+#mobile-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 99; /* Below the menu (100) */
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out;
+}
+
+#mobile-menu {
+  /* Fixed position and off-screen by default */
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 75%;
+  max-width: 300px;
+  height: 100%;
+  background-color: #222;
+  z-index: 100;
+  transform: translateX(100%); /* Start completely off-screen to the right */
+  transition: transform 0.3s ease-in-out;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: -4px 0 10px ragba(0, 0, 0, 0.3);
+}
+
+#mobile-menu ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 50px; /* Space for the close button */
+}
+
+#mobile-menu ul li a {
+  color: var(--background-color-light);
+  text-decoration: none;
+  padding: 15px 0;
+  display: block;
+  border-bottom: 1px solid #444;
+  transition: color 0.3s ease-in-out;
+  text-transform: uppercase;
+}
+
+#mobile-menu ul li:last-child a {
+  border-bottom: none;
+}
+
+#mobile-menu ul li a:hover {
+  color: var(--background-color-primary);
+}
+
+/* Hamburger Button */
+.menu-toggle-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  color: var(--background-color-light);
+  font-size: 24px;
+}
+
+/* Close Button inside the Menu */
+.close-button {
+  background: none;
+  border: none;
+  color: var(--background-color-light);
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 32px;
+  cursor: pointer;
+  line-height: 1;
+  padding: 5px;
+  border-radius: 5px;
+  transition: color 0.2s;
+}
+
+.close-button:hover {
+  color: var(--background-color-primary);
+}
+
+/* Icons for state management */
+.icon-close {
+  display: none;
+}
+
+/* --- Active Menu State (Controlled by JS on the body) --- */
+/* Class added to body when menu is open */
+.menu-is-open #mobile-menu {
+  transform: translateX(0);
+}
+
+.menu-is-open #mobile-overlay {
+  opacity: 1;
+  visibility: visible;
+}
+
+@media (max-width: 1200px) {
+  .menu-container {
+    grid-column: 2 / span 5;
+    width: 100%;
+    padding: 0;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  /* Desktop View: Hide mobile elements */
+  .menu-toggle-button {
+    display: none;
+  }
+
+  #mobile-menu,
+  #mobile-overlay {
+    /* Important: ensure they are completely gone on desktop */
+    display: none !important;
+  }
+  .desktop-nav {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* Mobile View: Hide desktop elements and show mobile toggle */
+  .menu-container a {
+    display: none;
+  }
+}
+
+/* Header Section */
+.hero {
+  background-image: url("../assets/hero-image.jpg");
+  min-height: 100vh;
+  height: auto;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin: 0;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(231, 231, 218, 0.8);
+}
+
+.hero > * {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: var(--width-12col);
+  height: 100vh;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-text h1 {
+  padding: 0;
+  margin: 15px 0 15px 0;
+  font-size: 72px;
+  font-weight: 400;
+  color: var(--primary-text-color);
+}
+
+.hero-text h1 span {
+  font-weight: 700;
+  font-size: 96px;
+}
+
+.hero-text p {
+  font-size: 30px;
+  color: var(--primary-text-color);
+  font-style: italic;
+  padding-bottom: 20px;
+  width: 75%;
+  line-height: 1.6;
+}
+
+.buttons-hero {
+  margin: 30px 0;
+  display: flex;
+  gap: 10px;
+}
+
+.get-tickets-btn,
+.explore-the-story-btn {
+    padding: 10px 30px;
+    height: 60px;
+    width: 220px;
+    font-size: 20px;
+    border: none;
+    font-family: "Crimson Pro", serif;
+    box-shadow: 
+        0px 4px 6px -4px rgba(0, 0, 0, 0.1),
+        0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+
+    transition: background-color 0.4s ease, opacity 0.3s ease; 
+}
+
+.get-tickets-btn {
+    background-color: var(--dark-brown-color);
+    color: var(--third--text-color);
+}
+
+.explore-the-story-btn {
+    background-color: var(--green-color);
+    color: var(--primary-text-color);
+}
+
+.get-tickets-btn:hover{
+    background-color: #4e2a29;
+}
+
+/* NEEDS MODIFICATION */
+.explore-the-story-btn:hover{
+    background-color: #4b683e;
+    color: #e5e2d9;
+}
+
+.hero-star{
+    display: flex;
+    position: absolute;
+    bottom: 30px;
+}
+
+.hero-star img{
+    position: relative;
+}
+
+/* We need wavy cut for the hero image */
+
+
+/* HERE WILL BE RESPOSIVENESS */
+
+
+
+
+
+
+
+
+

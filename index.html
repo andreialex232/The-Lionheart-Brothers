@@ -1,13 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/base/reset.css">
-    <link rel="stylesheet" href="css/main.css">
-  </head>
-    <body>
-      
-    </body>
-  </html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/base/reset.css">
+  <link rel="stylesheet" href="css/main.css">
+  <!-- Favicon  -->
+  <link rel="icon" type="image/svg" href="assets/favicon-logo.svg">
+
+  <!-- This is the section where meta tags will be added -->
+
+</head>
+
+<body>
+
+
+  <div class="container">
+    <!-- For making the background dark (for sidebar focus) (Responsiveness) -->
+    <div id="mobile-overlay"></div>
+    <!-- Navigation Bar -->
+    <nav class="navigation fixed">
+      <div class="menu-container">
+        <!-- Logo of the Play -->
+        <div class="logo-navbar">
+          <img src="assets/brothers-lionheart-logo.png" alt="brothers-lionheart-logo">
+        </div>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about-us.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <!-- Mobile Menu Toggle Button (Hamburger) (Visible <= 768px) -->
+        <button id="menu-toggle" class="menu-toggle-button" aria-expanded="false" aria-controls="main-menu"
+          aria-label="Open Menu">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M5 8h22M5 16h22M5 24h22" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile Slide-In Menu (Fixed and initially hidden) -->
+      <nav id="mobile-menu">
+        <button id="close-button" class="close-button" aria-label="Close Menu">
+          &times; The 'X' close icon
+        </button>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about-us.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </nav>
+
+    <!-- Header Area -->
+    <header class="hero">
+      <div class="hero-container">
+
+        <div class="top-svg">
+          <img src="assets/hero-top-icon.svg" alt="">
+        </div>
+
+        <div class="hero-text">
+          <h1>Welcome to the<br><span>Enchanted Theatre</span></h1></br>
+          <p>Experience the magic of The Brothers Lionheart - a timeless tale of courage, adventure, and the unbreakable
+            bond between brothers</p>
+          <div class="buttons-hero">
+            <button class="get-tickets-btn">Get Tickets</button> <!--HERE SHOULD BE AN ANCHOR-->
+            <button class="explore-the-story-btn">Explore the story</button> <!--HERE SHOULD BE AN ANCHOR-->
+          </div>
+        </div>
+        <div class="hero-star">
+        <img src="assets/hero-star.svg" alt="">
+        </div>
+      </div>
+    </header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>

@@ -3,3 +3,32 @@ padding: 0;
 margin: 0;
 box-sizing: border-box;
 }
+
+body,
+html {
+  width: var(--width-full);
+  font-family: "Crimson Pro", serif;
+  position: relative;
+  background-color: var(--background-color-dark);
+  transition: margin-right 0.3s ease-in-out;
+}
+
+.navigation,
+.hero,
+.footer {
+  width: var(--width-full);
+}
+
+/* Partea asta va fi schimbata */
+.todays-recipes,
+.categories,
+.content-area {
+  width: var(--width-12col);
+}
+
+.container {
+  display: grid;
+  grid-template-rows: auto;
+  gap: var(--grid-gap);
+  width: var(--width-full);
+}
