@@ -231,14 +231,11 @@
   }
 }
 
-
-
-
 /* Header Section */
 .hero {
   background-image: url("../assets/hero-image.jpg");
   min-height: 100vh;
-  height: auto;
+  width: 100%;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -270,7 +267,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: var(--width-12col);
+  width: 100%;
+  max-width: var(--width-12col);
   height: 100vh;
 }
 
@@ -316,10 +314,10 @@
   width: 220px;
   font-size: 20px;
   border: none;
+  cursor: pointer;
   font-family: "Crimson Pro", serif;
   box-shadow: 0px 4px 6px -4px rgba(0, 0, 0, 0.1),
     0px 10px 15px -3px rgba(0, 0, 0, 0.1);
-
   transition: background-color 0.4s ease, opacity 0.3s ease;
 }
 
@@ -330,6 +328,16 @@
 
 .explore-the-story-btn {
   background-color: var(--green-color);
+  color: var(--primary-text-color);
+}
+
+.get-tickets-btn a {
+  text-decoration: none;
+  color: var(--third--text-color);
+}
+
+.explore-the-story-btn a {
+  text-decoration: none;
   color: var(--primary-text-color);
 }
 
@@ -351,11 +359,162 @@
 
 .hero-star img {
   position: relative;
+  width: 100%;
+  max-width: 100px;
 }
 
-/* We need wavy cut for the hero image */
+/* Wavy Hero Image */
+.custom-shape-divider-bottom-1765054686 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
 
-/* HERE WILL BE RESPOSIVENESS */
+.custom-shape-divider-bottom-1765054686 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 70px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1765054686 .shape-fill {
+  fill: var(--primary-background-color);
+}
+
+/* Adjustments for larger screens where content might start looking too stretched */
+@media (max-width: 1200px) {
+  .hero-container {
+    /* Slightly increase horizontal padding on large screens for visual balance */
+    padding: 0 40px;
+  }
+
+  .hero-text h1 {
+    font-size: 80px; /* Minor size reduction from a potential larger default */
+  }
+
+  .hero-text h1 span {
+    font-size: 110px;
+  }
+
+  .hero-text p {
+    font-size: 32px;
+    width: 60%; /* Keep it constrained */
+  }
+}
+
+/* --- New: Smaller Laptop/Tablet Landscape View (e.g., up to 992px) --- */
+/* A good intermediate step before the dedicated Tablet View */
+@media (max-width: 992px) {
+  .hero-text h1 {
+    font-size: 70px; /* Further reduction */
+  }
+
+  .hero-text h1 span {
+    font-size: 90px;
+  }
+
+  .hero-text p {
+    font-size: 28px;
+    width: 70%; /* Allow it to take more space */
+  }
+
+  .buttons-hero {
+    /* Ensure buttons still look good before stacking */
+    gap: 10px;
+  }
+
+  .get-tickets-btn,
+  .explore-the-story-btn {
+    /* Slightly smaller button text/padding if needed */
+    padding: 15px 30px;
+    font-size: 18px;
+  }
+}
+
+/* --- Existing: Tablet View (e.g., up to 768px) --- */
+@media (max-width: 768px) {
+  .hero {
+    width: 100%;
+  }
+
+  .hero-text h1 {
+    font-size: 56px; /* Smaller main heading */
+    margin-top: 50px; /* Give more space on top */
+  }
+
+  .hero-text h1 span {
+    font-size: 72px; /* Smaller emphasized text */
+  }
+
+  .hero-text p {
+    font-size: 24px; /* Smaller paragraph text */
+    width: 80%; /* Increased width for better readability on tablets */
+  }
+
+  .buttons-hero {
+    margin: 20px 0;
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 15px;
+    width: 80%; /* Control button group width */
+    max-width: 300px; /* Limit max width for stacking */
+  }
+
+  .get-tickets-btn,
+  .explore-the-story-btn {
+    width: 100%; /* Full width for stacked buttons */
+    max-width: none; /* Override desktop width restriction */
+  }
+}
+
+/* --- Existing: Mobile View (e.g., up to 480px) --- */
+@media (max-width: 480px) {
+  .hero-container {
+    padding: 0 10px; /* Reduced padding */
+    justify-content: flex-start; /* Start content higher on the screen */
+    padding-top: 15vh; /* Push content down a bit from the top edge */
+    height: auto; /* Allow container height to be determined by content */
+  }
+
+  .hero {
+    min-height: 80vh; /* Make the hero section a bit shorter */
+  }
+
+  .top-svg {
+    margin-bottom: 20px; /* Space above the main text */
+  }
+
+  .top-svg img {
+    max-width: 60px; /* Smaller icon */
+  }
+
+  .hero-text h1 {
+    font-size: 40px; /* Even smaller main heading */
+    margin: 10px 0;
+  }
+
+  .hero-text h1 span {
+    font-size: 52px; /* Even smaller emphasized text */
+    display: block; /* Ensure the span is on its own line for better flow */
+  }
+
+  .hero-text p {
+    font-size: 18px; /* Standard mobile paragraph size */
+    width: 90%; /* Take up nearly full width */
+  }
+
+  .hero-star {
+    display: none;
+  }
+
+  .custom-shape-divider-bottom-1765054686 svg {
+    height: 50px; /* Make the wave a bit less tall */
+  }
+}
 
 /* The Story Section */
 
@@ -408,7 +567,9 @@
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: var(--grid-gap);
-  width: var(--width-12col);
+  width: 90%;
+  max-width: var(--width-12col);
+
   margin: 0 auto;
 }
 
@@ -418,7 +579,8 @@
   border: 1px solid var(--primary-text-color);
   border-radius: 10px;
   background-color: var(--card-color);
-  height: 485px;
+  min-height: 485px;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -455,7 +617,8 @@
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: var(--grid-gap);
-  width: var(--width-12col);
+  width: 90%;
+  max-width: var(--width-12col);
   min-height: 100px;
   margin: 0 auto;
 }
@@ -476,6 +639,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
+  width: 90%;
   max-width: var(--width-12col);
   margin: 50px auto;
 }
@@ -580,6 +744,7 @@
   width: 100%;
   margin: 0 auto;
   position: relative;
+  overflow: hidden;
 }
 
 .first-slider-wrapper {
@@ -658,16 +823,16 @@
 .nav-button:active {
   transform: translateY(-50%) scale(0.95);
 }
-
+/* 
 .prev {
   left: 0;
-  margin-left: 150px;
+  margin-left: 0;
 }
 
 .next {
   right: 0;
-  margin-right: 150px;
-}
+  margin-right: 0;
+} */
 
 .under-text {
   display: flex;
@@ -837,7 +1002,8 @@
 .grid-container {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  width: var(--width-12col);
+  width: 90%;
+  max-width: var(--width-12col);
   margin: 0 auto;
 }
 
@@ -1123,7 +1289,8 @@ h3 p {
 .practical-information-grid-container {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  width: var(--width-12col);
+  width: 90%;
+  min-width: var(--width-12col);
   margin: 0 auto;
   gap: 30px;
 }
@@ -1244,7 +1411,8 @@ h3 p {
 .frequently-asked-questions-grid-container {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  width: var(--width-12col);
+  width: 90%;
+  min-width: var(--width-12col);
   margin: 0 auto;
   gap: 30px;
 }
