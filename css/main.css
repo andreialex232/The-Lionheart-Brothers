@@ -534,23 +534,23 @@
   flex-shrink: 0;
 }
 
+/* --------------------------------- The Story Section ------------------------------------------ */
 .the-story {
-  min-height: 1200px;
+  padding-top: 60px;
 }
 
 .the-story-headline {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-align: center;
   align-items: center;
-  margin: 0 auto;
 }
 
 .the-story-headline h2 {
   font-size: 62px;
   font-weight: 400;
   color: #202020;
-  padding-top: 30px;
 }
 
 .the-story-headline p {
@@ -558,10 +558,10 @@
   font-style: italic;
   color: #202020;
   padding: 20px 0 50px 0;
-  margin: 0 auto;
 }
 
-.story-grid-wrapper {
+/* Story Grid */
+.story-grid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: var(--grid-gap);
@@ -570,70 +570,66 @@
   margin: 0 auto;
 }
 
-.the-story-content {
+.the-story-container {
   grid-column: 1 / span 12;
-  padding: 35px 35px;
+  padding: 50px 60px 60px 60px;
   border: 4px solid #bbc5b8;
   border-radius: 10px;
   background-color: #905654;
   min-height: 485px;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   position: relative;
-  overflow: hidden;
+  margin-bottom: 40px;
 }
 
-.the-story-content-block p {
+.the-story-content p {
   font-size: 20px;
   line-height: 1.6;
   font-weight: 400;
   margin-bottom: 20px;
   color: #faf3e0;
-  font-family: var(--font-serif);
 }
 
-.the-story-content-block q {
+.the-story-content q {
   display: flex;
   justify-content: center;
   text-align: center;
-  font-size: 25px;
+  font-size: 24px;
   font-style: italic;
   line-height: 1.5;
-  font-weight: 400;
-  margin-top: 30px;
+  font-weight: 200;
+  margin-top: 60px;
   color: #faf3e0;
 }
 
-/* Card section */
-.brotherhood-card {
-  padding-top: 50px;
+.left-top {
+  position: absolute;
+  top: 20px;
+  left: 20px;
 }
 
-.brotherhood-card-wrapper {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  gap: var(--grid-gap);
-  width: 90%;
-  max-width: var(--width-12col);
-  min-height: 100px;
-  margin: 0 auto;
+.right-top {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  transform: rotate(-270deg);
 }
 
-.brotherhood-card-content {
-  grid-column: 1 / span 4;
-  border: 2px solid var(--green-color);
-  background-color: #a8c79b33;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
-  height: 100px;
+.left-bottom {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  transform: rotate(-90deg);
 }
 
-.card-grid-wrapper {
+.right-bottom {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  transform: rotate(-180deg);
+}
+
+/* Card Section */
+.card-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
@@ -642,6 +638,7 @@
   margin: 50px auto;
 }
 
+/* Card Container */
 .card {
   display: flex;
   flex-direction: column;
@@ -654,7 +651,8 @@
   border: 2px solid #909a8d;
 }
 
-.icon-circle {
+/* Card Icon Container */
+.card-icon {
   width: 70px;
   height: 70px;
   border-radius: 50%;
@@ -669,7 +667,8 @@
     0px 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
 
-.icon-circle img {
+/* Icon */
+.card-icon img {
   width: 35px;
   height: 35px;
 }
@@ -677,16 +676,23 @@
 .card h3 {
   color: #202020;
   margin: 0 0 15px 0;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 24px;
 }
 
 .card p {
   color: #202020;
   font-size: 20px;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
+/* ---------------------------- Media Queries (Responsive Design) --------------------------------------- */
+
+@media (max-width: 1200px) {
+  .the-story-content q {
+    margin-top: 50px;
+  }
+}
 @media (max-width: 992px) {
   .the-story-headline {
     width: 90%;
@@ -695,113 +701,58 @@
 
   .the-story-headline h2 {
     font-size: 58px;
-    text-align: center;
-  }
-
-  .story-grid-wrapper,
-  .card-grid-wrapper {
-    width: 90%;
-  }
-
-  .card-grid-wrapper {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .brotherhood-card-wrapper {
-    grid-template-columns: repeat(12, 1fr);
-  }
-
-  .brotherhood-card-content {
-    grid-column: 5 / span 4;
   }
 }
 
 @media (max-width: 768px) {
-  .the-story-headline {
-    width: 90%;
-    margin: 0 auto;
-  }
-
   .the-story-headline h2 {
     font-size: 42px;
     width: 80%;
-    text-align: center;
   }
 
   .the-story-headline p {
     font-size: 20px;
-    text-align: center;
   }
 
-  .line {
-    width: 10%;
-    margin: 0 20px;
+  .the-story-content q {
+    font-size: 22px;
   }
 
-  .card-grid-wrapper {
+  .card-grid {
     grid-template-columns: repeat(1, 1fr);
-  }
-
-  .brotherhood-card-content {
-    grid-column: 1 / span 1;
   }
 }
 
 @media (max-width: 567px) {
-  .the-story {
-    min-height: auto;
-  }
-
-  .the-story-headline {
-    width: 90%;
-    margin: 0 auto;
-  }
-
   .the-story-headline h2 {
     font-size: 36px;
-    text-align: center;
-    font-weight: 400;
   }
 
   .the-story-headline p {
     font-size: 18px;
-    text-align: center;
     padding: 10px 0 30px 0;
   }
 
-  .section-divider {
-    padding-top: 30px;
-  }
-
-  .line {
-    width: 10%;
-    margin: 0 15px;
-  }
-
-  .story-grid-wrapper {
-    width: 90%;
+  .the-story-container {
+    padding: 20px 20px 20px 20px;
+    min-height: auto;
   }
 
   .the-story-content {
     padding: 20px;
-    min-height: auto;
   }
 
-  .the-story-content-block p {
-    font-size: 16px;
-    line-height: 1.5;
+  .the-story-content p {
+    font-size: 18px;
   }
 
-  .the-story-content-block q {
-    font-size: 16px;
-    margin-top: 20px;
-  }
-
-  .card-grid-wrapper {
-    grid-template-columns: 1fr;
-    gap: 20px;
-    width: 90%;
-    margin: 30px auto;
+  .the-story-content q {
+    font-size: 20px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-start;
+    text-align: start;
   }
 
   .card {
@@ -810,46 +761,31 @@
   }
 
   .card h3 {
-    font-size: 20px;
+    font-size: 22px;
   }
 
   .card p {
-    font-size: 16px;
-  }
-
-  .brotherhood-card-wrapper {
-    grid-template-columns: 1fr;
-    width: 95%;
-    min-height: auto;
-  }
-
-  .brotherhood-card-content {
-    grid-column: 1 / span 1;
-    padding: 15px;
-    height: auto;
+    font-size: 18px;
   }
 }
 
 /* Meet the Characters Section */
-.meet-the-characters {
-  min-height: 900px;
-}
+/* .meet-the-characters {
+  padding: 60px 0;
+} */
 
 .meet-the-characters-headline {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-align: center;
   align-items: center;
-  width: 90%;
-  margin: 0 auto;
 }
 
 .meet-the-characters-headline h2 {
   font-size: 62px;
   font-weight: 400;
   color: #202020;
-  padding-top: 30px;
-  text-align: center;
 }
 
 .meet-the-characters-headline p {
@@ -857,16 +793,14 @@
   font-style: italic;
   color: #202020;
   padding: 20px 0 30px 0;
-  text-align: center;
 }
 
-/* NEW: The viewport for the slider - enables horizontal scrolling/snapping */
+/* Slider Container */
 .slider-container {
   overflow-x: scroll;
   scroll-behavior: smooth;
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch; /* Improved scrolling experience on touch devices */
-  /* Adjust width to ensure it only shows 3 cards at max-width */
   width: 90%;
   max-width: var(--width-12col);
   margin: 50px auto;
@@ -1378,6 +1312,10 @@
 }
 
 @media (max-width: 768px) {
+  .show--headline h2 {
+    font-size: 42px;
+  }
+
   .ticket-info-btn {
     grid-column: 10 / 13;
     padding: 10px 15px;
@@ -1660,12 +1598,12 @@
 }
 
 @media (max-width: 992px) {
-  .grid-container {
-    gap: 20px;
-  }
-
   .ticket-information-headline h2 {
     font-size: 58px;
+  }
+
+  .grid-container {
+    gap: 20px;
   }
 
   .header {
