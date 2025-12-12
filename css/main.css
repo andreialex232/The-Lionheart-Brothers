@@ -1409,15 +1409,16 @@
   }
 }
 
-/* Ticket Information Section */
+/* --------------------------------- Ticket Information Section --------------------------------------------*/
 .ticket-information {
-  min-height: 900px;
+  padding-top: 20px;
 }
 
 .ticket-information-headline {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-align: center;
   align-items: center;
 }
 
@@ -1425,8 +1426,6 @@
   font-size: 62px;
   font-weight: 400;
   color: #202020;
-  padding-top: 30px;
-  text-align: center;
 }
 
 .ticket-information-headline p {
@@ -1434,7 +1433,6 @@
   font-style: italic;
   color: #202020;
   padding: 20px 0 50px 0;
-  text-align: center;
 }
 
 .grid-container {
@@ -1442,246 +1440,151 @@
   grid-template-columns: repeat(12, 1fr);
   gap: 30px;
   max-width: var(--width-12col);
+  width: 90%;
   margin: 0 auto;
 }
 
+/* Cards Container */
 .childrens-ticket,
 .family-package {
+    min-height: 536px;
   border-radius: 10px;
   border: 4px solid #905654;
-  transition: box-shadow 0.3s ease;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   box-shadow: 
-        /* Umbra 1 */ 0px 4px 6px -4px rgba(0, 0, 0, 0.1),
-    /* Umbra 2 */ 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+   0px 8px 10px -6px rgba(0, 0, 0, 0.1),
+   0px 20px 25px -5px rgba(0, 0, 0, 0.1);
 }
 
-/* Children's Card - Desktop */
+/* Children's Card Grid*/
 .childrens-ticket {
   grid-column: 1 / span 6;
-  height: 536px;
 }
 
-/* Family Card - Desktop */
+/* Family Card Grid*/
 .family-package {
   grid-column: 7 / span 6;
-  height: 536px;
 }
 
+/* Children's Ticket Card Content and Family Package Card Content */
 .childrens-ticket-content,
 .family-package-content {
-  padding: 30px 30px 0px;
+  padding: 30px 40px 0px;
   flex-grow: 1;
 }
 
-/* Title Icon Price Container */
+/* Icon + Title + Subtitle + Price Container */
 .header {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
-  margin: 0 30px 30px 20px;
+  padding: 0 2px 30px 0px;
 }
 
+/* Icon + Title + Subtitle */
 .header-left {
   display: flex;
-  align-items: flex-start;
-  gap: 15px;
+  gap: 20px;
+  padding-left: 2px;
 }
 
-.icon-big {
-  width: 48px;
-  height: 48px;
-  fill: #202020;
-  flex-shrink: 0;
-  margin-top: 5px;
+/* Icon */
+.header-left img {
+  width: 64px;
+  height: 64px;
 }
 
-/* Title and Subtitle Container */
-.title-stack {
+/* Title & Subtitle Container */
+.title-container {
   display: flex;
   flex-direction: column;
-  gap: 0;
 }
 
+/* Title */
 .ticket-title {
   font-size: 30px;
   font-weight: 400;
   color: #202020;
-  margin-bottom: 2px;
+  padding-bottom: 2px;
 }
 
 /* Subtitle */
 .subtitle {
   font-size: 20px;
-  color: #905654b2;
+  color: #905654;
   font-weight: 400;
   line-height: 1.2;
-  margin-top: 5px;
+  padding-top: 5px;
 }
 
-/* Price in the right side */
+/* Price*/
 .price {
   font-size: 48px;
   font-weight: 400;
   color: #202020;
 }
 
-/* Benefits Section */
+/* Includes Section (What the Card Includes) */
 .includes-title {
   font-weight: 400;
   font-size: 16px;
-  margin: 15px 0 12px 0;
-  color: var(--primary-text-color);
-  padding: 15px 0 0 10px;
-  border-top: 2px solid rgba(142, 77, 71, 0.2);
+  color: #202020;
+  padding: 15px 0 15px 2px;
+  border-top: 2px solid #905654;
 }
 
-.features-grid {
+/* Includes Grid */
+.includes-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 25px 20px;
-  margin-left: 20px;
+  list-style: none;
+  padding-left: 2px;
 }
 
-.feature-item {
+/* Includes Text  */
+.includes-item {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
+  font-size: 16px;
   color: #202020;
 }
 
-.feature-item svg {
+/* Checkmark */
+.includes-item img {
   width: 14px;
   height: 14px;
-  fill: var(--check-green);
-  flex-shrink: 0;
 }
 
-/* Button 'Book Now' */
-.button-section {
+/* Button */
+.ticket-information-container {
   margin-top: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.book-now-button {
-  width: 424px;
+.ticket-information-btn {
+  min-width: 85%;
   background-color: #905654;
   color: #e5e2d9;
   font-family: "Crimson PRO", serif;
   font-size: 20px;
-  font-weight: 400;
   padding: 18px 15px;
   margin-bottom: 30px;
   border: none;
   cursor: pointer;
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease-in-out;
 }
 
-.book-now-button:hover {
+.ticket-information-btn:hover {
   background-color: #6a3a3a;
-  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3);
 }
 
-/* Card Age Recomandation + Refund Policy - Desktop */
-.age-recommendation-card,
-.refund-policy-card {
-  border-radius: 10px;
-  border: 2px solid #90565433;
-  padding: 30px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 20px;
-}
-
-#age-recommendation {
-  grid-column: 1 / span 6;
-}
-
-#refund-policy {
-  grid-column: 7 / span 6;
-}
-
-.age-recommendation-content,
-.refund-policy-content {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-
-.info-card-text-container {
-  padding: 5px 20px 0 20px;
-}
-
-.info-card-text-container h3 {
-  font-size: 20px;
-  padding-bottom: 10px;
-  font-weight: 400;
-}
-
-.info-card-text-container p {
-  font-size: 16px;
-  line-height: 1.6;
-}
-
-.info-card-text-container h3,
-.info-card-text-container p {
-  color: var(--primary-text-color);
-}
-
-.age-recommendation-icon-container,
-.refund-policy-icon-container {
-  min-width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-}
-
-.age-recommendation-icon-container img,
-.refund-policy-icon-container img {
-  width: 30px;
-  height: 30px;
-}
-
-.age-recommendation-icon-container {
-  background-color: #b0a9dc;
-}
-
-.refund-policy-icon-container {
-  background-color: #d2a17b;
-}
+/* ---------------------------- Media Queries (Responsive Design) --------------------------------------- */
 
 @media (max-width: 1200px) {
-  /* General Layout */
-  .grid-container {
-    gap: 20px;
-  }
-
-  /* Headlines */
-  .ticket-information-headline h2 {
-    font-size: 56px;
-  }
-
-  .ticket-information-headline p {
-    font-size: 22px;
-    padding: 20px 0 40px 0;
-  }
-
-  /* Ticket Card Elements */
-  .childrens-ticket-content,
-  .family-package-content {
-    padding: 25px 25px 0px;
-  }
-
-  .header {
-    margin: 0 20px 20px 15px;
-  }
-
   .ticket-title {
     font-size: 28px;
   }
@@ -1694,30 +1597,13 @@
     font-size: 44px;
   }
 
-  .features-grid {
-    gap: 13px 15px;
-    margin-left: 15px;
+  .includes-grid {
+    gap: 20px 15px;
   }
 
-  /* Book Now Button */
-  .book-now-button {
-    width: 380px;
+  .ticket-information-btn {
     font-size: 18px;
     padding: 15px;
-  }
-
-  /* Info Cards (Age/Refund) */
-  .age-recommendation-card,
-  .refund-policy-card {
-    padding: 25px;
-  }
-
-  .info-card-text-container h3 {
-    font-size: 18px;
-  }
-
-  .info-card-text-container p {
-    font-size: 15px;
   }
 }
 
@@ -1726,42 +1612,12 @@
     gap: 20px;
   }
 
-  /* Titluri */
   .ticket-information-headline h2 {
-    font-size: 48px;
-  }
-
-  .ticket-information-headline p {
-    font-size: 20px;
-    padding: 15px 0 35px 0;
-  }
-
-  .childrens-ticket,
-  .family-package {
-    grid-column: 1 / span 6;
-    height: auto; /* IMPORTANT: Permite cardului să se extindă pentru a preveni override-ul conținutului */
-  }
-
-  .childrens-ticket {
-    grid-column: 1 / span 6;
-  }
-
-  .family-package {
-    grid-column: 7 / span 6;
-  }
-
-  .childrens-ticket-content,
-  .family-package-content {
-    padding: 20px 20px 0;
+    font-size: 58px;
   }
 
   .header {
-    margin: 0 15px 20px 15px;
-  }
-
-  .icon-big {
-    width: 40px;
-    height: 40px;
+    gap: 20px;
   }
 
   .ticket-title {
@@ -1776,65 +1632,25 @@
     font-size: 40px;
   }
 
-  /* Beneficii */
-  .features-grid {
+  .includes-grid {
     gap: 15px 10px;
-    margin-left: 10px;
-  }
-
-  /* Butonul */
-  .book-now-button {
-    width: 90%;
-    font-size: 18px;
-    padding: 15px 10px;
-  }
-
-  /* Carduri Info */
-  #age-recommendation {
-    grid-column: 1 / span 6;
-  }
-
-  #refund-policy {
-    grid-column: 7 / span 6;
-  }
-
-  .age-recommendation-card,
-  .refund-policy-card {
-    padding: 20px;
   }
 }
 
 @media (max-width: 768px) {
-  .grid-container {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-
-  .ticket-information {
-    min-height: auto;
-  }
-
-  /* Toate cardurile iau lățimea completă (un card pe rând) */
-  .childrens-ticket,
-  .family-package,
-  #age-recommendation,
-  #refund-policy {
-    grid-column: 1 / -1; /* Lățime completă */
-    height: auto;
-  }
-
-  .childrens-ticket-content,
-  .family-package-content {
-    padding: 20px 10px 0;
-  }
-
-  .ticket-information-headline h2 {
-    font-size: 38px;
+  .ticket-information-headline h2{
+    font-size: 42px;
   }
 
   .ticket-information-headline p {
-    font-size: 16px;
+    font-size: 20px;
     padding: 15px 0 30px 0;
+  }
+
+  .childrens-ticket,
+  .family-package {
+    grid-column: 1 / -1; 
+    min-height: auto;
   }
 
   .ticket-title {
@@ -1845,135 +1661,84 @@
     font-size: 32px;
   }
 
-  .features-grid {
-    grid-template-columns: 1fr;
-    gap: 10px;
+  .header{
+    padding: 0 2px 15px 0px;
   }
 
-  .feature-item {
+  .includes-item {
     font-size: 14px;
   }
 
-  .book-now-button {
-    width: 90%;
+  .ticket-information-btn {
     font-size: 16px;
-    padding: 15px 10px;
     margin-bottom: 20px;
-  }
-
-  /* Carduri de informații (Age/Refund) */
-  .age-recommendation-card,
-  .refund-policy-card {
-    padding: 15px;
-  }
-
-  .info-card-text-container h3 {
-    font-size: 17px;
-  }
-
-  .info-card-text-container p {
-    font-size: 14px;
-  }
-
-  .header {
-    margin: 0 10px 15px 5px;
-  }
-
-  .icon-big {
-    margin-top: 0;
   }
 }
 
 @media (max-width: 567px) {
-  .grid-container {
-    gap: 15px;
+  .ticket-information-headline{
+    width: 80%;
+    margin: 0 auto;
   }
 
-  /* Titluri */
   .ticket-information-headline h2 {
-    font-size: 32px;
-    padding-top: 20px;
+    font-size: 36px;
   }
+
   .ticket-information-headline p {
-    font-size: 15px;
+    font-size: 20px;
     padding: 10px 0 25px 0;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
   }
 
   .childrens-ticket-content,
   .family-package-content {
-    padding: 15px 15px 0;
+    padding: 15px 20px 0;
   }
 
   .header {
-    margin: 0 0 10px 0;
+    margin: 0;
+    gap: 10px;
+  }
+
+  .icon-container{
+    display: flex;
     align-items: center;
   }
 
-  .icon-big {
-    width: 35px;
-    height: 35px;
+   .icon-container img{
+    width: 40px;
+    height: 40px;
+  }
+  
+  .title-container {
+    padding: 10px 0 10px 0;
   }
 
   .ticket-title {
-    font-size: 20px;
+    font-size: 18px;
   }
 
-  .subtitle {
+   .subtitle {
     font-size: 14px;
   }
 
   .price {
     font-size: 30px;
+    padding-top: 10px;
   }
 
-  .features-grid {
-    grid-template-columns: 1fr;
-    gap: 8px;
-  }
-
-  .includes-title {
-    margin: 10px 0 8px 0;
-    padding: 10px 0 0 0;
-  }
-
-  .feature-item {
+  .includes-item {
     font-size: 13px;
   }
 
-  /* Butonul */
-  .book-now-button {
+  .ticket-information-btn {
     font-size: 15px;
     padding: 12px 10px;
-    margin-bottom: 15px;
-  }
-
-  .age-recommendation-card,
-  .refund-policy-card {
-    padding: 12px;
-  }
-
-  .info-card-text-container {
-    padding: 0 10px 0 10px;
-  }
-
-  .info-card-text-container h3 {
-    font-size: 16px;
-    padding-bottom: 5px;
-  }
-
-  .info-card-text-container p {
-    font-size: 13px;
-  }
-
-  .age-recommendation-icon-container,
-  .refund-policy-icon-container {
-    min-width: 40px;
-    height: 40px;
-  }
-  .age-recommendation-icon-container img,
-  .refund-policy-icon-container img {
-    width: 25px;
-    height: 25px;
   }
 }
 
@@ -2012,7 +1777,6 @@
   margin: 0 auto;
 }
 
-
 /* Two-Column Layout*/
 #location,
 #public-transport,
@@ -2048,9 +1812,9 @@
 .parking-content,
 .accessibility-content,
 .arrive-early-content {
-  display: flex; 
+  display: flex;
   width: 100%;
-  align-items: flex-start; 
+  align-items: flex-start;
 }
 
 /* Icons Container */
@@ -2100,7 +1864,7 @@
 .location-btn {
   display: inline-block;
   background-color: #905654;
-  padding: 8px 15px; 
+  padding: 8px 15px;
   margin-top: 20px;
   font-size: 14px;
   color: #faf3e0;
@@ -2338,7 +2102,6 @@
 .more-questions-contact-button:hover {
   background-color: #683e3d;
 }
-
 
 /* ---------------------------- Media Queries (Responsive Design) --------------------------------------- */
 

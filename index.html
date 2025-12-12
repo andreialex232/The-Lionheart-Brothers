@@ -526,11 +526,12 @@
         </div>
       </section>
 
+
       <!-- Ticket information Section -->
-      <section class="ticket-information" id="anchor-ticket-information">
+      <section id="anchor-ticket-information" class="ticket-information" aria-labelledby="ticket-info-main-heading">
         <div class="section-divider">
           <hr class="line left-line">
-          <img src="assets/ticket-icon.svg" alt="">
+          <img src="assets/ticket-icon.svg" alt="" aria-hidden="true">
           <hr class="line right-line">
         </div>
 
@@ -541,200 +542,149 @@
 
         <div class="grid-container">
           <!-- Children's Ticket -->
-          <div class="childrens-ticket">
+          <div class="childrens-ticket" aria-label="Children's Ticket details">
+            <!-- Children's Ticket Content -->
             <div class="childrens-ticket-content">
+              <!-- Children's Ticket Title Elements -->
               <div class="header">
+                <!-- Icon + Title + Subtitle -->
                 <div class="header-left">
                   <!-- Child Icon -->
-                  <img src="assets/child-icon.svg" alt="">
-                  <div class="title-stack">
-                    <h2 class="ticket-title">Children's ticket</h2>
+                  <div class="icon-container">
+                    <img src="assets/child-icon.svg" alt="" aria-hidden="true">
+                  </div>
+                  <div class="title-container">
+                    <h3 class="ticket-title">Children's ticket</h3>
                     <p class="subtitle">One child entry (Ages 8-15)</p>
                   </div>
                 </div>
-                <span class="price">$28</span>
+                <strong class="price" aria-label="Price: 28 US Dollars">$28</strong>
               </div>
 
               <p class="includes-title">Includes:</p>
-              <div class="features-grid">
-                <!-- Checkmark -->
-                <div class="feature-item">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                    <path
-                      d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
-                  </svg>
+              <ul class="includes-grid" role="list">
+                <li class="includes-item">
+                  <img src="assets/svg/checkmark-green-icon.svg" alt="" aria-hidden="true">
                   Reserved seating
-                </div>
-                <div class="feature-item">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                    <path
-                      d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
-                  </svg>
+                </li>
+                <li class="includes-item">
+                  <img src="assets/svg/checkmark-green-icon.svg" alt="" aria-hidden="true">
                   Program included
-                </div>
-                <div class="feature-item">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                    <path
-                      d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
-                  </svg>
+                </li>
+                <li class="includes-item">
+                  <img src="assets/svg/checkmark-green-icon.svg" alt="" aria-hidden="true">
                   Accessible entrance
-                </div>
-                <div class="feature-item">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                    <path
-                      d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
-                  </svg>
+                </li>
+                <li class="includes-item">
+                  <img src="assets/svg/checkmark-green-icon.svg" alt="" aria-hidden="true">
                   Concessions available
-                </div>
-                <div class="feature-item">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                    <path
-                      d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
-                  </svg>
+                </li>
+                <li class="includes-item">
+                  <img src="assets/svg/checkmark-green-icon.svg" alt="" aria-hidden="true">
                   Easy online booking
-                </div>
-                <div class="feature-item">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                    <path
-                      d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
-                  </svg>
+                </li>
+                <li class="includes-item">
+                  <img src="assets/svg/checkmark-green-icon.svg" alt="" aria-hidden="true">
                   Group discounts offered
-                </div>
-                <div class="feature-item">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                    <path
-                      d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
-                  </svg>
+                </li>
+                <li class="includes-item">
+                  <img src="assets/svg/checkmark-green-icon.svg" alt="" aria-hidden="true">
                   Meet & greet option
-                </div>
-                <div class="feature-item">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                    <path
-                      d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
-                  </svg>
+                </li>
+                <li class="includes-item">
+                  <img src="assets/svg/checkmark-green-icon.svg" alt="" aria-hidden="true">
                   Photo opportunities
-                </div>
-              </div>
+                </li>
+              </ul>
             </div>
 
-            <div class="button-section">
-              <button class="book-now-button">Book now</button>
+            <div class="ticket-information-container">
+              <button class="ticket-information-btn" aria-label="Book Children's Ticket now">Book now</button>
             </div>
           </div>
 
-          <!-- Familiy Package -->
-          <div class="family-package">
+          <!-- Family Package -->
+          <div class="family-package" aria-label="Family Package details">
+            <!-- Family Package Content -->
             <div class="family-package-content">
+              <!-- Family Package Title Elements -->
               <div class="header">
+                <!-- Icon + Title + Subtitle -->
                 <div class="header-left">
                   <!-- Family Icon -->
-                  <img src="assets/family-package-icon.svg" alt="">
-                  <div class="title-stack">
-                    <h2 class="ticket-title">Family package</h2>
+                  <div class="icon-container">
+                    <img src="assets/svg/family-package-icon.svg" alt="" aria-hidden="true">
+                  </div>
+                  <div class="title-container">
+                    <h3 class="ticket-title">Family package</h3>
                     <p class="subtitle">Four person entry</p>
                   </div>
                 </div>
-                <span class="price">$89</span>
+                <strong class="price" aria-label="Price: 89 US Dollars">$89</strong>
               </div>
 
               <p class="includes-title">Includes:</p>
-              <div class="features-grid">
-                <div class="feature-item">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                    <path
-                      d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
-                  </svg>
+              <ul class="includes-grid" role="list">
+                <li class="includes-item">
+                  <img src="assets/svg/checkmark-brown-icon.svg" alt="" aria-hidden="true">
                   Flexible cancellation
-                </div>
-                <div class="feature-item">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                    <path
-                      d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
-                  </svg>
+                </li>
+                <li class="includes-item">
+                  <img src="assets/svg/checkmark-brown-icon.svg" alt="" aria-hidden="true">
                   Season pass option
-                </div>
-                <div class="feature-item">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                    <path
-                      d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
-                  </svg>
+                </li>
+                <li class="includes-item">
+                  <img src="assets/svg/checkmark-brown-icon.svg" alt="" aria-hidden="true">
                   Parking information
-                </div>
-                <div class="feature-item">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                    <path
-                      d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
-                  </svg>
+                </li>
+                <li class="includes-item">
+                  <img src="assets/svg/checkmark-brown-icon.svg" alt="" aria-hidden="true">
                   Early arrival welcome
-                </div>
-                <div class="feature-item">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                    <path
-                      d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
-                  </svg>
+                </li>
+                <li class="includes-item">
+                  <img src="assets/svg/checkmark-brown-icon.svg" alt="" aria-hidden="true">
                   Reserved seating
-                </div>
-                <div class="feature-item">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                    <path
-                      d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
-                  </svg>
+                </li>
+                <li class="includes-item">
+                  <img src="assets/svg/checkmark-brown-icon.svg" alt="" aria-hidden="true">
                   Program included
-                </div>
-                <div class="feature-item">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                    <path
-                      d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
-                  </svg>
+                </li>
+                <li class="includes-item">
+                  <img src="assets/svg/checkmark-brown-icon.svg" alt="" aria-hidden="true">
                   Accessible entrance
-                </div>
-                <div class="feature-item">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                    <path
-                      d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
-                  </svg>
+                </li>
+                <li class="includes-item">
+                  <img src="assets/svg/checkmark-brown-icon.svg" alt="" aria-hidden="true">
                   Concessions available
-                </div>
-                <div class="feature-item">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                    <path
-                      d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
-                  </svg>
+                </li>
+                <li class="includes-item">
+                  <img src="assets/svg/checkmark-brown-icon.svg" alt="" aria-hidden="true">
                   Easy online booking
-                </div>
-                <div class="feature-item">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                    <path
-                      d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
-                  </svg>
+                </li>
+                <li class="includes-item">
+                  <img src="assets/svg/checkmark-brown-icon.svg" alt="" aria-hidden="true">
                   Group discounts offered
-                </div>
-                <div class="feature-item">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                    <path
-                      d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
-                  </svg>
+                </li>
+                <li class="includes-item">
+                  <img src="assets/svg/checkmark-brown-icon.svg" alt="" aria-hidden="true">
                   Priority seating options
-                </div>
-                <div class="feature-item">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                    <path
-                      d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
-                  </svg>
+                </li>
+                <li class="includes-item">
+                  <img src="assets/svg/checkmark-brown-icon.svg" alt="" aria-hidden="true">
                   Family photo package
-                </div>
-              </div>
+                </li>
+              </ul>
             </div>
 
-            <div class="button-section">
-              <button class="book-now-button">Book now</button>
+            <div class="ticket-information-container">
+              <button class="ticket-information-btn" aria-label="Book Family Package now">Book now</button>
             </div>
+
           </div>
         </div>
     </div>
 
-
-
+    
     <!-- Practical Information Section -->
     <section class="practical-information" aria-labelledby="practical-info-main-heading">
       <div class="section-divider">
