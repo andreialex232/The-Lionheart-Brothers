@@ -42,16 +42,18 @@
   --hover-dark-btn: #4e2a29; /* get-tickets btn */
 }
 
-/* Navigation Section */
+/* ------------------------------------------------- Navigation Section ----------------------------------------- */
 .navigation {
-  background-color: var(--background-color-nav);
+  background-color: #FAF3E0;
   position: absolute;
   z-index: 10;
   width: var(--width-full);
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0px 4px 6px -4px rgba(0, 0, 0, 0.1),
+  border-bottom: 2px solid #90565433;
+  box-shadow: 
+    0px 4px 6px -4px rgba(0, 0, 0, 0.1),
     0px 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
 
@@ -546,7 +548,7 @@
 .line {
   width: 10%;
   border: 1px solid #202020;
-  margin: 0 30px;
+  margin: 0 20px;
 }
 
 .the-story {
@@ -960,7 +962,7 @@
   padding-bottom: 2px;
 }
 
-/* Arrows --- */
+/* Arrows */
 .nav-button {
   position: absolute;
   top: 50%;
@@ -1748,7 +1750,7 @@
 
 /* ---------------------------- Practical Information Section ------------------------------------ */
 .practical-information {
-  padding: 60px 0;
+  padding: 20px 0;
 }
 
 .practical-information-headline {
@@ -2150,7 +2152,6 @@
 
   .frequently-asked-headline h2 {
     font-size: 36px;
-    padding-top: 20px;
     text-align: center;
   }
 
