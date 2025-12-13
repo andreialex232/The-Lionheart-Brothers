@@ -883,12 +883,12 @@
   height: 60px;
 }
 
-/* Left */
+/* Left Arrow */
 .prev {
   left: -40px;
 }
 
-/* Right */
+/* Right Arrow */
 .next {
   right: -40px;
 }
@@ -931,6 +931,7 @@
 }
 
 @media (max-width: 768px) {
+
   .meet-the-characters {
     min-height: auto;
   }

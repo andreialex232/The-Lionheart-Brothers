@@ -53,7 +53,6 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-
 // Slider Functionality
 document.addEventListener("DOMContentLoaded", () => {
   const sliderWrapper = document.getElementById("sliderWrapper");
