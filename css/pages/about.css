@@ -193,6 +193,7 @@ header .hero-container {
 }
 
 .mission-content-block p {
+    background-color: #905654;
     color: #FAF3E0;
     text-align: center;
     font-family: var(--font-serif);
@@ -308,6 +309,7 @@ header .hero-container {
 
 
 .card-icon {
+    box-shadow: none;
     border: 0;
     color: blue;
     background-color: var(--primary-text-color) !important;
