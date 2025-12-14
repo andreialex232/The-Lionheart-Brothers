@@ -1857,6 +1857,16 @@
   transition: background-color 0.3s, color 0.3s;
 }
 
+.rejseplanen{
+  color: var(--text-primary);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.rejseplanen:hover{
+  text-decoration: underline;
+}
+
 .location-btn:hover,
 .location-btn:focus {
   background-color: var(--btn-primary-hover);
