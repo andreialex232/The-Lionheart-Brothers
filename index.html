@@ -4,22 +4,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>The Brothers Lionheart | Esbjerg Amatør Teater - Skartyden</title>
+  <!-- Meta Tags -->
+  <meta name="description"
+    content="Experience the magic of 'The Brothers Lionheart' by Skarntyden Theater – a timeless tale of courage, adventure, and the unbreakable bond between brothers. Book your tickets now!">
+  <meta name="keywords"
+    content="The Brothers Lionheart, Brothers Lionheart, Skarntyden Theater, theater, play, tickets, cultural events, Astrid Lindgren">
+  <meta name="author" content="Esbjerg Amatør Teater Skartyden">
+  <meta name="robots" content="index, follow">
+
   <link rel="stylesheet" href="css/base/reset.css">
   <link rel="stylesheet" href="css/main.css">
   <!-- NavBar Pages -->
   <link rel="stylesheet" href="pages/about-us.html">
   <link rel="stylesheet" href="pages/contact.html">
   <!-- Favicon  -->
-  <link rel="icon" type="image/svg" href="assets/favicon-logo.svg">
-
-  <!-- This is the section where meta tags will be added -->
-
+  <link rel="icon" type="image/svg" href="assets/svg/favicon-logo.svg">
 </head>
 
 <body>
-
-
   <div class="container">
     <!-- For making the background dark (for sidebar focus) (Responsiveness) -->
     <div id="mobile-overlay"></div>
@@ -28,10 +31,9 @@
       <div class="menu-container">
         <!-- Logo of the Play -->
         <div class="logo-navbar">
-          <img src="assets/brothers-lion-logo.svg" alt="brothers-lionheart-logo">
+          <img src="assets/svg/brothers-lion-logo.svg" alt="brothers-lionheart-logo">
         </div>
         <ul>
-          <li><a href="index.html">Home</a></li>
           <li><a href="about-us.html">About Us</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
@@ -60,33 +62,30 @@
     </nav>
 
     <!-- Header Area -->
-    <header class="hero">
+    <header class="hero" role="banner">
       <div class="hero-container">
-
-        <div class="top-svg">
-          <img src="assets/hero-top-icon.svg" alt="">
+        <div class="hero-headline-icon">
+          <img src="assets/svg/hero-headline-icon.svg" alt="Decorative horizontal rule with small geometric shapes" aria-hidden="true">
         </div>
 
         <div class="hero-text">
-          <div class="title-hero-container">
-            <h1>Welcome to the<br><span>Enchanted Theatre</span></h1></br>
-          </div>
+          <h2>Skarntyden presents:</h2>
+          <h1>The Brothers Lionheart</h1></br>
           <p>Experience the magic of The Brothers Lionheart - a timeless tale of courage, adventure, and the unbreakable
             bond between brothers</p>
-          <div class="buttons-hero">
-            <button class="get-tickets-btn"><a href="#anchor-ticket-information">Get Tickets</a></button>
-            <!--HERE SHOULD BE AN ANCHOR-->
-            <button class="explore-the-story-btn"><a href="pages/about-us.html">Explore the story</a></button>
-            <!--HERE SHOULD BE AN ANCHOR-->
-          </div>
 
+          <div class="hero-btns-container">
+            <a href="#anchor-ticket-information" class="hero-ticket-info-btn" role="button">Ticket Information</a>
+            <a href="pages/about-us.html" class="explore-the-story-btn" role="button">Explore the story</a>
+          </div>
         </div>
+
         <div class="hero-star">
-          <img src="assets/hero-star.svg" alt="">
+          <img src="assets/svg/hero-star.svg" alt="Faint, light-brown line-art icon of a four-pointed star or sparkler with a small dot and plus sign beside it." aria-hidden="true">
         </div>
       </div>
       <!-- Wavy Hero Image-->
-      <div class="custom-shape-divider-bottom-1765054686">
+      <div class="custom-shape-divider-bottom-1765565201">
         <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
           <path
             d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
@@ -97,21 +96,22 @@
 
 
     <!-- The Story Section -->
-    <section class="the-story">
+    <section class="the-story" aria-labelledby="story-heading">
       <div class="section-divider">
         <hr class="line left-line">
-        <img src="assets/book-icon.svg" alt="">
+        <img src="assets/svg/book-icon.svg" alt="Black outline icon of an open book, symbolizing knowledge, learning, or reading material." aria-hidden="true">
         <hr class="line right-line">
       </div>
 
       <div class="the-story-headline">
-        <h2>The Story of the Brothers Lionheart</h2>
+        <h2 id="story-heading">The Story of the Brothers Lionheart</h2>
         <p>A tale of courage, love, and adventure</p>
       </div>
 
-      <div class="story-grid-wrapper">
-        <div class="the-story-content">
-          <div class="the-story-content-block">
+      <div class="story-grid">
+        <!-- The Story Container -->
+        <div class="the-story-container">
+          <div class="the-story-content">
 
             <p>Karl is sick, very sick. His older brother Jonathan tells him stories of Nangiyala, a magical land where
               they will one day be reunited. When Jonathan dies saving Karl from a fire, Karl must find his way to this
@@ -126,55 +126,57 @@
               show them that true bravery isn’t the absence of fear – it’s standing up for what’s right, no matter the
               cost.</p>
 
-            <q>“All the things I’ve been afraid of – when I finally did them, they weren’t dangerous at all.”</q>
+            <q>All the things I’ve been afraid of – when I finally did them, they weren’t dangerous at all.</q>
+
+            <img src="assets/svg/corner-icon.svg" class="left-top" alt="Corner Icon" aria-hidden="true">
+            <img src="assets/svg/corner-icon.svg" class="right-top" alt="Corner Icon" aria-hidden="true">
+            <img src="assets/svg/corner-icon.svg" class="left-bottom" alt="Corner Icon" aria-hidden="true">
+            <img src="assets/svg/corner-icon.svg" class="right-bottom" alt="Corner Icon" aria-hidden="true">
+
           </div>
         </div>
       </div>
 
       <!-- Card Section -->
-      <section class="card-section">
-        <div class="card-grid-wrapper">
+      <div class="card-section">
+        <div class="card-grid" role="list">
 
           <!-- Card 1 - Brotherhood -->
-          <div class="card card-brotherhood">
-            <div class="icon-circle icon-circle-brotherhood">
-              <img src="assets/brotherhood-icon.svg" alt="">
+          <div class="card" role="listitem">
+            <div class="card-icon">
+              <img src="assets/svg/heart-icon.svg" alt="Heart Icon" aria-hidden="true">
             </div>
             <h3>Brotherhood</h3>
             <p>An unbreakable bond that transcends life itself</p>
           </div>
-          <!-- Card ends -->
 
           <!-- Card 2 Courage -->
-          <div class="card card-courage">
-            <div class="icon-circle icon-circle-courage">
-              <img src="assets/courage-icon.svg" alt="">
+          <div class="card" role="listitem">
+            <div class="card-icon">
+              <img src="assets/svg/sword-icon.svg" alt="Sword Icon" aria-hidden="true">
             </div>
             <h3>Courage</h3>
             <p>Finding strength to stand against tyranny and fear</p>
           </div>
-          <!-- Card ends -->
 
           <!-- Card 3 Adventure -->
-          <div class="card card-adventure">
-            <div class="icon-circle icon-circle-adventure">
-              <img src="assets/star-icon.svg" alt="">
+          <div class="card" role="listitem">
+            <div class="card-icon">
+              <img src="assets/svg/star-icon.svg" alt="Star Icon" aria-hidden="true">
             </div>
-
             <h3>Adventure</h3>
             <p>Epic journeys in the magical land of Nangiyala</p>
           </div>
-          <!-- Card ends -->
-        </div>
-      </section>
-    </section>
 
+        </div>
+      </div>
+    </section>
 
     <!-- Meet the Characters Section -->
     <section class="meet-the-characters">
       <div class="section-divider">
         <hr class="line left-line">
-        <img src="assets/people-icon.svg" alt="">
+        <img src="assets/svg/people-icon.svg" alt="">
         <hr class="line right-line">
       </div>
 
@@ -183,580 +185,530 @@
         <p>The heroes and villains of our tale</p>
       </div>
 
-      <div class="image-slider">
-        <!-- Buton PREV Left Side -->
-        <button class="nav-button prev">&#10094;</button>
 
-        <div class="first-slider-wrapper" id="sliderWrapper">
+      <!-- Image Slider -->
+      <div class="carousel">
+        <button class="nav-button prev" id="prevButton">&#10094;</button>
 
-          <!-- CARD 1 -->
-          <div class="image-card">
-            <div class="image-1">
-              <img src="assets/person-1.png" alt="Jonathan Lionheart">
+
+        <div class="carousel-inner">
+          <div class="carousel-track" id="sliderWrapper">
+
+            <!-- Image 1 -->
+            <div class="image-card">
+              <div class="image">
+                <img src="assets/img/jonathan-lionheart.png" alt="Jonathan Lionheart">
+              </div>
+              <div class="text-box">
+                <h3>Jonathan Lionheart</h3>
+              </div>
             </div>
-            <div class="text-box">
-              <h3>Jonathan Lionheart</h3>
+
+            <!-- Image 2 -->
+            <div class="image-card">
+              <div class="image">
+                <img src="assets/img/karl-lionheart.png" alt="Karl Lionheart">
+              </div>
+              <div class="text-box">
+                <h3>Karl Lionheart</h3>
+              </div>
+            </div>
+
+            <!-- Image 3 -->
+            <div class="image-card">
+              <div class="image">
+                <img src="assets/img/katla.png" alt="Katla">
+              </div>
+              <div class="text-box">
+                <h3>Katla</h3>
+              </div>
+            </div>
+
+            <!-- Image 7 -->
+            <div class="image-card">
+              <div class="image">
+                <img src="assets/img/sofia.png" alt="Sofia">
+              </div>
+              <div class="text-box">
+                <h3>Sofia</h3>
+              </div>
+            </div>
+
+            <!-- Image 4 -->
+            <div class="image-card">
+              <div class="image">
+                <img src="assets/img/tengil.png" alt="Tengil">
+              </div>
+              <div class="text-box">
+                <h3>Tengil</h3>
+              </div>
+            </div>
+
+            <!-- Image 5 -->
+            <div class="image-card">
+              <div class="image">
+                <img src="assets/img/mattias.png" alt="Mattias">
+              </div>
+              <div class="text-box">
+                <h3>Mattias</h3>
+              </div>
+            </div>
+
+            <!-- Image 6 -->
+            <div class="image-card">
+              <div class="image">
+                <img src="assets/img/orvar.png" alt="Orvar">
+              </div>
+              <div class="text-box">
+                <h3>Orvar</h3>
+              </div>
             </div>
           </div>
-
-          <!-- CARD 2 -->
-          <div class="image-card">
-            <div class="image-1">
-              <img src="assets/person-2.png" alt="Karl Lionheart">
-            </div>
-            <div class="text-box">
-              <h3>Karl Lionheart</h3>
-            </div>
-          </div>
-
-          <!-- CARD 3 -->
-          <div class="image-card">
-            <div class="image-1">
-              <img src="assets/dragon-1.png" alt="Tengil">
-            </div>
-            <div class="text-box">
-              <h3>Tengil</h3>
-            </div>
-          </div>
+          <button class="nav-button next" id="nextButton">&#10095;</button>
         </div>
-
-        <!-- Buton NEXT Right Side -->
-        <button class="nav-button next">&#10095;</button>
       </div>
-
-      <p class="under-text">And many more wonderful characters await you in this magical performance!</p>
     </section>
-    <div>
 
 
-
-      <!-- Show Calendar Section -->
-      <section class="show-calendar">
-        <div class="section-divider">
-          <hr class="line left-line">
-          <img src="assets/calendar-icon.svg" alt="">
-          <hr class="line right-line">
-        </div>
-
-        <div class="show-calendar-headline">
-          <h2>Show Calendar</h2>
-          <p>Choose your magical evening</p>
-        </div>
-
-        <div class="calendar">
-          <div class="calendar-1">
-            <div class="calendar-wrapper">
-              <div class="calendar-content">
-
-                <div class="date-block">
-                  <span class="month">DEC</span>
-                  <span class="day">15</span>
-                </div>
-
-                <div class="details">
-                  <p class="day-name">Monday</p>
-                  <p class="full-date">December 15, 2025</p>
-                </div>
-
-                <div class="time-box">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                    <g fill="none">
-                      <path
-                        d="m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z" />
-                      <path fill="currentColor"
-                        d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12S6.477 2 12 2m0 2a8 8 0 1 0 0 16a8 8 0 0 0 0-16m0 2a1 1 0 0 1 .993.883L13 7v4.586l2.707 2.707a1 1 0 0 1-1.32 1.497l-.094-.083l-3-3a1 1 0 0 1-.284-.576L11 12V7a1 1 0 0 1 1-1" />
-                    </g>
-                  </svg>
-                  7:00 PM
-                </div>
-
-                <span class="evening-tag tag">Evening</span>
-
-                <button class="book-button">
-                  Book Now
-                  <img src="assets/book-now-icon.svg" alt="">
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="calendar">
-          <div class="calendar-1">
-            <div class="calendar-wrapper">
-              <div class="calendar-content">
-
-                <div class="date-block">
-                  <span class="month">DEC</span>
-                  <span class="day">16</span>
-                </div>
-
-                <div class="details">
-                  <p class="day-name">Tuesday</p>
-                  <p class="full-date">December 16, 2025</p>
-                </div>
-
-                <div class="time-box">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                    <g fill="none">
-                      <path
-                        d="m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z" />
-                      <path fill="currentColor"
-                        d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12S6.477 2 12 2m0 2a8 8 0 1 0 0 16a8 8 0 0 0 0-16m0 2a1 1 0 0 1 .993.883L13 7v4.586l2.707 2.707a1 1 0 0 1-1.32 1.497l-.094-.083l-3-3a1 1 0 0 1-.284-.576L11 12V7a1 1 0 0 1 1-1" />
-                    </g>
-                  </svg>
-                  2:00 PM
-                </div>
-
-                <span class="matinee-tag tag">Matinee</span>
-
-                <button class="book-button">
-                  Book Now
-                  <img src="assets/book-now-icon.svg" alt="">
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="calendar">
-          <div class="calendar-1">
-            <div class="calendar-wrapper">
-              <div class="calendar-content">
-
-                <div class="date-block">
-                  <span class="month">DEC</span>
-                  <span class="day">16</span>
-                </div>
-
-                <div class="details">
-                  <p class="day-name">Tuesday</p>
-                  <p class="full-date">December 16, 2025</p>
-                </div>
-
-                <div class="time-box">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                    <g fill="none">
-                      <path
-                        d="m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z" />
-                      <path fill="currentColor"
-                        d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12S6.477 2 12 2m0 2a8 8 0 1 0 0 16a8 8 0 0 0 0-16m0 2a1 1 0 0 1 .993.883L13 7v4.586l2.707 2.707a1 1 0 0 1-1.32 1.497l-.094-.083l-3-3a1 1 0 0 1-.284-.576L11 12V7a1 1 0 0 1 1-1" />
-                    </g>
-                  </svg>
-                  7:00 PM
-                </div>
-
-                <span class="evening-tag tag">Evening</span>
-
-                <button class="book-button">
-                  Book Now
-                  <img src="assets/book-now-icon.svg" alt="">
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="calendar">
-          <div class="calendar-1">
-            <div class="calendar-wrapper">
-              <div class="calendar-content">
-
-                <div class="date-block">
-                  <span class="month">DEC</span>
-                  <span class="day">21</span>
-                </div>
-
-                <div class="details">
-                  <p class="day-name">Sunday</p>
-                  <p class="full-date">December 21, 2025</p>
-                </div>
-
-                <div class="time-box">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                    <g fill="none">
-                      <path
-                        d="m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z" />
-                      <path fill="currentColor"
-                        d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12S6.477 2 12 2m0 2a8 8 0 1 0 0 16a8 8 0 0 0 0-16m0 2a1 1 0 0 1 .993.883L13 7v4.586l2.707 2.707a1 1 0 0 1-1.32 1.497l-.094-.083l-3-3a1 1 0 0 1-.284-.576L11 12V7a1 1 0 0 1 1-1" />
-                    </g>
-                  </svg>
-                  2:00 PM
-                </div>
-
-                <span class="matinee-tag tag">Matinee</span>
-
-                <button class="book-button">
-                  Book Now
-                  <img src="assets/book-now-icon.svg" alt="">
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="calendar">
-          <div class="calendar-1">
-            <div class="calendar-wrapper">
-              <div class="calendar-content">
-
-                <div class="date-block">
-                  <span class="month">DEC</span>
-                  <span class="day">21</span>
-                </div>
-
-                <div class="details">
-                  <p class="day-name">Sunday</p>
-                  <p class="full-date">December 21, 2025</p>
-                </div>
-
-                <div class="time-box">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                    <g fill="none">
-                      <path
-                        d="m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z" />
-                      <path fill="currentColor"
-                        d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12S6.477 2 12 2m0 2a8 8 0 1 0 0 16a8 8 0 0 0 0-16m0 2a1 1 0 0 1 .993.883L13 7v4.586l2.707 2.707a1 1 0 0 1-1.32 1.497l-.094-.083l-3-3a1 1 0 0 1-.284-.576L11 12V7a1 1 0 0 1 1-1" />
-                    </g>
-                  </svg>
-                  6:00 PM
-                </div>
-
-                <span class="evening-tag tag">Evening</span>
-
-                <button class="book-button">
-                  Book Now
-                  <img src="assets/book-now-icon.svg" alt="">
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="calendar">
-          <div class="calendar-1">
-            <div class="calendar-wrapper">
-              <div class="calendar-content">
-
-                <div class="date-block">
-                  <span class="month">DEC</span>
-                  <span class="day">22</span>
-                </div>
-
-                <div class="details">
-                  <p class="day-name">Monday</p>
-                  <p class="full-date">December 22, 2025</p>
-                </div>
-
-                <div class="time-box">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                    <g fill="none">
-                      <path
-                        d="m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z" />
-                      <path fill="currentColor"
-                        d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12S6.477 2 12 2m0 2a8 8 0 1 0 0 16a8 8 0 0 0 0-16m0 2a1 1 0 0 1 .993.883L13 7v4.586l2.707 2.707a1 1 0 0 1-1.32 1.497l-.094-.083l-3-3a1 1 0 0 1-.284-.576L11 12V7a1 1 0 0 1 1-1" />
-                    </g>
-                  </svg>
-                  7:00 PM
-                </div>
-
-                <span class="evening-tag tag">Evening</span>
-
-                <button class="book-button">
-                  Book Now
-                  <img src="assets/book-now-icon.svg" alt="">
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Show Calendar Box -->
-        <div class="grid-container">
-          <div class="show-calendar-info">
-            <div class="show-calendar-info-content">
-              <p>The performances are especially family-friendly with shorter duration and lighter atmosphere, perfect
-                for
-                younger audience members.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Ticket information Section -->
-      <section class="ticket-information" id="anchor-ticket-information">
-        <div class="section-divider">
-          <hr class="line left-line">
-          <img src="assets/ticket-icon.svg" alt="">
-          <hr class="line right-line">
-        </div>
-
-        <div class="ticket-information-headline">
-          <h2>Ticket Information</h2>
-          <p>Perfect for ages 8-15 and their families</p>
-        </div>
-
-        <div class="grid-container">
-          <!-- Children's Ticket -->
-          <div class="childrens-ticket">
-            <div class="childrens-ticket-content">
-              <div class="header">
-                <div class="header-left">
-                  <!-- Child Icon -->
-                  <img src="assets/child-icon.svg" alt="">
-                  <div class="title-stack">
-                    <h2 class="ticket-title">Children's ticket</h2>
-                    <p class="subtitle">One child entry (Ages 8-15)</p>
-                  </div>
-                </div>
-                <span class="price">$28</span>
-              </div>
-
-              <p class="includes-title">Includes:</p>
-              <div class="features-grid">
-                <!-- Checkmark -->
-                <div class="feature-item">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                    <path
-                      d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
-                  </svg>
-                  Reserved seating
-                </div>
-                <div class="feature-item">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                    <path
-                      d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
-                  </svg>
-                  Program included
-                </div>
-                <div class="feature-item">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                    <path
-                      d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
-                  </svg>
-                  Accessible entrance
-                </div>
-                <div class="feature-item">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                    <path
-                      d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
-                  </svg>
-                  Concessions available
-                </div>
-                <div class="feature-item">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                    <path
-                      d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
-                  </svg>
-                  Easy online booking
-                </div>
-                <div class="feature-item">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                    <path
-                      d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
-                  </svg>
-                  Group discounts offered
-                </div>
-                <div class="feature-item">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                    <path
-                      d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
-                  </svg>
-                  Meet & greet option
-                </div>
-                <div class="feature-item">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                    <path
-                      d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
-                  </svg>
-                  Photo opportunities
-                </div>
-              </div>
-            </div>
-
-            <div class="button-section">
-              <button class="book-now-button">Book now</button>
-            </div>
-          </div>
-
-          <!-- Familiy Package -->
-          <div class="family-package">
-            <div class="family-package-content">
-              <div class="header">
-                <div class="header-left">
-                  <!-- Family Icon -->
-                  <img src="assets/family-package-icon.svg" alt="">
-                  <div class="title-stack">
-                    <h2 class="ticket-title">Family package</h2>
-                    <p class="subtitle">Four person entry</p>
-                  </div>
-                </div>
-                <span class="price">$89</span>
-              </div>
-
-              <p class="includes-title">Includes:</p>
-              <div class="features-grid">
-                <div class="feature-item">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                    <path
-                      d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
-                  </svg>
-                  Flexible cancellation
-                </div>
-                <div class="feature-item">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                    <path
-                      d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
-                  </svg>
-                  Season pass option
-                </div>
-                <div class="feature-item">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                    <path
-                      d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
-                  </svg>
-                  Parking information
-                </div>
-                <div class="feature-item">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                    <path
-                      d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
-                  </svg>
-                  Early arrival welcome
-                </div>
-                <div class="feature-item">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                    <path
-                      d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
-                  </svg>
-                  Reserved seating
-                </div>
-                <div class="feature-item">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                    <path
-                      d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
-                  </svg>
-                  Program included
-                </div>
-                <div class="feature-item">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                    <path
-                      d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
-                  </svg>
-                  Accessible entrance
-                </div>
-                <div class="feature-item">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                    <path
-                      d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
-                  </svg>
-                  Concessions available
-                </div>
-                <div class="feature-item">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                    <path
-                      d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
-                  </svg>
-                  Easy online booking
-                </div>
-                <div class="feature-item">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                    <path
-                      d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
-                  </svg>
-                  Group discounts offered
-                </div>
-                <div class="feature-item">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                    <path
-                      d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
-                  </svg>
-                  Priority seating options
-                </div>
-                <div class="feature-item">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                    <path
-                      d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
-                  </svg>
-                  Family photo package
-                </div>
-              </div>
-            </div>
-
-            <div class="button-section">
-              <button class="book-now-button">Book now</button>
-            </div>
-          </div>
-
-          <!-- Age Recommendation Card -->
-          <div id="age-recommendation" class="age-recommendation-card">
-            <div class="age-recommendation-content">
-              <div class="age-recommendation-icon-container">
-                <img src="assets/child-icon.svg" alt="">
-              </div>
-              <!-- Center title and paragraph -->
-              <div class="info-card-text-container">
-                <h3>Age Recommendation</h3>
-                <p>The story contains themes of adventure, courage, and fantasy that resonate beautifully with this age
-                  group. A perfect theatrical experience for tweens and young teens!
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Refund Policy Card -->
-          <div id="refund-policy" class="refund-policy-card">
-            <div class="refund-policy-content">
-              <div class="refund-policy-icon-container">
-                <img src="assets/refund-policy-icon.svg" alt="">
-              </div>
-              <!-- Center title and paragraph  -->
-              <div class="info-card-text-container">
-                <h3>Refund Policy</h3>
-                <p>Tickets can be refunded up to the performance. Exchanges are available up to 24 hours before
-                  showtime, subject to availability.
-                  48 hours before
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-    </div>
-
-
-
-    <!-- Practical Information Section -->
-    <section class="practical-information">
+    <!-- Show Calendar Section -->
+    <section class="show-calendar" aria-labelledby="show-calendar-heading" role="list">
       <div class="section-divider">
         <hr class="line left-line">
-        <img src="assets/location-icon.svg" alt="">
+        <img src="assets/svg/calendar-icon.svg" alt="Calendar Icon" aria-hidden="true">
+        <hr class="line right-line">
+      </div>
+
+      <div class="show-calendar-headline">
+        <h2 id="show-calendar-heading">Show Calendar</h2>
+        <p>Choose your magical evening</p>
+      </div>
+
+      <!-- Card 1 -->
+      <div class="calendar" role="listitem">
+        <div class="calendar-grid">
+          <div class="calendar-content" role="region"
+            aria-label="Showtime Monday, December 15, 2025 at 10 AM, Morning Show">
+
+            <!-- Date Container Left -->
+            <div class="date-container" aria-hidden="true">
+              <span class="month">dec</span>
+              <span class="day">15</span>
+            </div>
+
+            <!-- Details (Besides Date Container Left) -->
+            <div class="details" id="show-details-dec15-morning">
+              <p class="day-name">Monday</p>
+              <p class="full-date">December 15, 2025</p>
+            </div>
+
+            <!-- Time Container -->
+            <div class="time-container" aria-hidden="true">
+              <img src="assets/svg/time-calenadar-icon.svg" alt="Time Icon">
+              10:00 AM
+            </div>
+
+            <!-- Tag -->
+            <span class="morning-tag tag" aria-label="Show type: Morning">Morning</span>
+
+            <!-- Button -->
+            <button class="ticket-info-btn"
+              aria-labelledby="ticket-info-label-dec15-morning show-details-dec15-morning">
+              <span id="ticket-info-label-dec15-morning">Ticket info</span>
+              <img src="assets/svg/book-now-icon.svg" alt="Ticket Info Icon" aria-hidden="true">
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="calendar" role="listitem">
+        <div class="calendar-grid">
+          <div class="calendar-content" role="region"
+            aria-label="Showtime Tuesday, December 16, 2025 at 2 PM, Afternoon Show">
+
+            <!-- Date Container Left -->
+            <div class="date-container" aria-hidden="true">
+              <span class="month">dec</span>
+              <span class="day">16</span>
+            </div>
+
+            <!-- Details (Besides Date Container Left) -->
+            <div class="details" id="show-details-dec16-afternoon">
+              <p class="day-name">Tuesday</p>
+              <p class="full-date">December 16, 2025</p>
+            </div>
+
+            <!-- Time Container -->
+            <div class="time-container">
+              <img src="assets/svg/time-calenadar-icon.svg" alt="Time Icon" aria-hidden="true">
+              2:00 PM
+            </div>
+
+            <!-- Tag -->
+            <span class="afternoon-tag tag" aria-label="Show type: Afternoon">Afternoon</span>
+
+            <!-- Button -->
+            <button class="ticket-info-btn"
+              aria-labelledby="ticket-info-label-dec16-afternoon show-details-dec16-afternoon">
+              <span id="ticket-info-label-dec16-afternoon">Ticket info</span>
+              <img src="assets/svg/book-now-icon.svg" alt="Ticket Info Icon" aria-hidden="true">
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="calendar" role="listitem">
+        <div class="calendar-grid">
+          <div class="calendar-content" role="region"
+            aria-label="Showtime Tuesday, December 16, 2025 at 10 AM, Morning Show">
+
+            <!-- Date Container Left -->
+            <div class="date-container" aria-hidden="true">
+              <span class="month">dec</span>
+              <span class="day">16</span>
+            </div>
+
+            <!-- Details (Besides Date Container Left) -->
+            <div class="details" id="show-details-dec16-morning">
+              <p class="day-name">Tuesday</p>
+              <p class="full-date">December 16, 2025</p>
+            </div>
+
+            <!-- Time Container -->
+            <div class="time-container" aria-hidden="true">
+              <img src="assets/svg/time-calenadar-icon.svg" alt="Time Icon">
+              10:00 AM
+            </div>
+
+            <!-- Tag -->
+            <span class="morning-tag tag" aria-label="Show type: Morning">Morning</span>
+
+            <!-- Button -->
+            <button class="ticket-info-btn"
+              aria-labelledby="ticket-info-label-dec16-morning show-details-dec16-morning">
+              <span id="ticket-info-label-dec16-morning">Ticket info</span>
+              <img src="assets/svg/book-now-icon.svg" alt="Ticket Info Icon" aria-hidden="true">
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="calendar" role="listitem">
+        <div class="calendar-grid">
+          <div class="calendar-content" role="region"
+            aria-label="Showtime Sunday, December 21, 2025 at 2 PM, Afternoon Show">
+
+            <!-- Date Container Left -->
+            <div class="date-container" aria-hidden="true">
+              <span class="month">dec</span>
+              <span class="day">21</span>
+            </div>
+
+            <!-- Details (Besides Date Container Left) -->
+            <div class="details" id="show-details-dec21-afternoon">
+              <p class="day-name">Sunday</p>
+              <p class="full-date">December 21, 2025</p>
+            </div>
+
+            <!-- Time Container -->
+            <div class="time-container" aria-hidden="true">
+              <img src="assets/svg/time-calenadar-icon.svg" alt="Time Icon">
+              2:00 PM
+            </div>
+
+            <!-- Tag -->
+            <span class="afternoon-tag tag" aria-label="Show type: Afternoon">Afternoon</span>
+
+            <!-- Button -->
+            <button class="ticket-info-btn"
+              aria-labelledby="ticket-info-label-dec21-afternoon show-details-dec21-afternoon">
+              <span id="ticket-info-label-dec21-afternoon">Ticket info</span>
+              <img src="assets/svg/book-now-icon.svg" alt="Ticket Info Icon" aria-hidden="true">
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="calendar" role="listitem">
+        <div class="calendar-grid">
+          <div class="calendar-content" role="region"
+            aria-label="Showtime Sunday, December 21, 2025 at 10 AM, Morning Show">
+
+            <!-- Date Container Left -->
+            <div class="date-container" aria-hidden="true">
+              <span class="month">dec</span>
+              <span class="day">21</span>
+            </div>
+
+            <!-- Details (Besides Date Container Left) -->
+            <div class="details" id="show-details-dec21-morning">
+              <p class="day-name">Sunday</p>
+              <p class="full-date">December 21, 2025</p>
+            </div>
+
+            <!-- Time Container -->
+            <div class="time-container">
+              <img src="assets/svg/time-calenadar-icon.svg" alt="Time Icon" aria-hidden="true">
+              10:00 AM
+            </div>
+
+            <!-- Tag -->
+            <span class="morning-tag tag" aria-label="Show type: Morning">Morning</span>
+
+            <!-- Button -->
+            <button class="ticket-info-btn"
+              aria-labelledby="ticket-info-label-show-details-dec21-morning show-details-dec21-morning">
+              <span id="ticket-info-label-dec21-morning">Ticket info</span>
+              <img src="assets/svg/book-now-icon.svg" alt="Ticket Info Icon" aria-hidden="true">
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="calendar calendar-last-container" role="listitem">
+        <div class="calendar-grid">
+          <div class="calendar-content" role="region"
+            aria-label="Showtime Monday, December 22, 2025 at 10 AM, Morning Show">
+
+            <!-- Date Container Left -->
+            <div class="date-container" aria-hidden="true">
+              <span class="month">dec</span>
+              <span class="day">22</span>
+            </div>
+
+            <!-- Details (Besides Date Container Left) -->
+            <div class="details" id="show-details-dec22-morning">
+              <p class="day-name">Monday</p>
+              <p class="full-date">December 22, 2025</p>
+            </div>
+
+            <!-- Time Container -->
+            <div class="time-container">
+              <img src="assets/svg/time-calenadar-icon.svg" alt="Time Icon" aria-hidden="true">
+              10:00 AM
+            </div>
+
+            <!-- Tag -->
+            <span class="morning-tag tag" aria-label="Show type: Morning">Morning</span>
+
+            <!-- Button -->
+            <button class="ticket-info-btn"
+              aria-labelledby="ticket-info-label-dec22-morning show-details-dec22-morning">
+              <span id="ticket-info-label-dec22-morning">Ticket info</span>
+              <img src="assets/svg/book-now-icon.svg" alt="Ticket Info Icon" aria-hidden="true">
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Show Calendar Info -->
+      <div class="show-calendar-info-grid">
+        <div class="show-calendar-info" role="note" aria-labelledby="info-paragraph">
+          <div class="show-calendar-info-content">
+            <p id="info-paragraph">The performances are especially family-friendly with shorter duration and lighter
+              atmosphere, perfect
+              for younger audience members.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ticket information Section -->
+    <section id="anchor-ticket-information" class="ticket-information" aria-labelledby="ticket-info-main-heading">
+      <div class="section-divider">
+        <hr class="line left-line">
+        <img src="assets/svg/ticket-icon.svg" alt="" aria-hidden="true">
         <hr class="line right-line">
       </div>
 
       <div class="ticket-information-headline">
+        <h2>Ticket Information</h2>
+        <p>Perfect for ages 8-15 and their families</p>
+      </div>
+
+      <div class="grid-container">
+        <!-- Children's Ticket -->
+        <div class="childrens-ticket" aria-label="Children's Ticket details">
+          <!-- Children's Ticket Content -->
+          <div class="childrens-ticket-content">
+            <!-- Children's Ticket Title Elements -->
+            <div class="header">
+              <!-- Icon + Title + Subtitle -->
+              <div class="header-left">
+                <!-- Child Icon -->
+                <div class="icon-container">
+                  <img src="assets/svg/child-icon.svg" alt="" aria-hidden="true">
+                </div>
+                <div class="title-container">
+                  <h3 class="ticket-title">Children's ticket</h3>
+                  <p class="subtitle">One child entry (Ages 8-15)</p>
+                </div>
+              </div>
+              <strong class="price" aria-label="Price: 28 US Dollars">$28</strong>
+            </div>
+
+            <p class="includes-title">Includes:</p>
+            <ul class="includes-grid" role="list">
+              <li class="includes-item">
+                <img src="assets/svg/checkmark-green-icon.svg" alt="Green Checkmark" aria-hidden="true">
+                Reserved seating
+              </li>
+              <li class="includes-item">
+                <img src="assets/svg/checkmark-green-icon.svg" alt="Green Checkmark" aria-hidden="true">
+                Program included
+              </li>
+              <li class="includes-item">
+                <img src="assets/svg/checkmark-green-icon.svg" alt="Green Checkmark" aria-hidden="true">
+                Accessible entrance
+              </li>
+              <li class="includes-item">
+                <img src="assets/svg/checkmark-green-icon.svg" alt="Green Checkmark" aria-hidden="true">
+                Concessions available
+              </li>
+              <li class="includes-item">
+                <img src="assets/svg/checkmark-green-icon.svg" alt="Green Checkmark" aria-hidden="true">
+                Easy online booking
+              </li>
+              <li class="includes-item">
+                <img src="assets/svg/checkmark-green-icon.svg" alt="Green Checkmark" aria-hidden="true">
+                Group discounts offered
+              </li>
+              <li class="includes-item">
+                <img src="assets/svg/checkmark-green-icon.svg" alt="Green Checkmark" aria-hidden="true">
+                Meet & greet option
+              </li>
+              <li class="includes-item">
+                <img src="assets/svg/checkmark-green-icon.svg" alt="Green Checkmark" aria-hidden="true">
+                Photo opportunities
+              </li>
+            </ul>
+          </div>
+
+          <div class="ticket-information-container">
+            <button class="ticket-information-btn" aria-label="Book Children's Ticket now">Book now</button>
+          </div>
+        </div>
+
+        <!-- Family Package -->
+        <div class="family-package" aria-label="Family Package details">
+          <!-- Family Package Content -->
+          <div class="family-package-content">
+            <!-- Family Package Title Elements -->
+            <div class="header">
+              <!-- Icon + Title + Subtitle -->
+              <div class="header-left">
+                <!-- Family Icon -->
+                <div class="icon-container">
+                  <img src="assets/svg/family-package-icon.svg" alt="" aria-hidden="true">
+                </div>
+                <div class="title-container">
+                  <h3 class="ticket-title">Family package</h3>
+                  <p class="subtitle">Four person entry</p>
+                </div>
+              </div>
+              <strong class="price" aria-label="Price: 89 US Dollars">$89</strong>
+            </div>
+
+            <p class="includes-title">Includes:</p>
+            <ul class="includes-grid" role="list">
+              <li class="includes-item">
+                <img src="assets/svg/checkmark-brown-icon.svg" alt="Brown Checkmark" aria-hidden="true">
+                Flexible cancellation
+              </li>
+              <li class="includes-item">
+                <img src="assets/svg/checkmark-brown-icon.svg" alt="Brown Checkmark" aria-hidden="true">
+                Season pass option
+              </li>
+              <li class="includes-item">
+                <img src="assets/svg/checkmark-brown-icon.svg" alt="Brown Checkmark" aria-hidden="true">
+                Parking information
+              </li>
+              <li class="includes-item">
+                <img src="assets/svg/checkmark-brown-icon.svg" alt="Brown Checkmark" aria-hidden="true">
+                Early arrival welcome
+              </li>
+              <li class="includes-item">
+                <img src="assets/svg/checkmark-brown-icon.svg" alt="Brown Checkmark" aria-hidden="true">
+                Reserved seating
+              </li>
+              <li class="includes-item">
+                <img src="assets/svg/checkmark-brown-icon.svg" alt="Brown Checkmark" aria-hidden="true">
+                Program included
+              </li>
+              <li class="includes-item">
+                <img src="assets/svg/checkmark-brown-icon.svg" alt="Brown Checkmark" aria-hidden="true">
+                Accessible entrance
+              </li>
+              <li class="includes-item">
+                <img src="assets/svg/checkmark-brown-icon.svg" alt="Brown Checkmark" aria-hidden="true">
+                Concessions available
+              </li>
+              <li class="includes-item">
+                <img src="assets/svg/checkmark-brown-icon.svg" alt="Brown Checkmark" aria-hidden="true">
+                Easy online booking
+              </li>
+              <li class="includes-item">
+                <img src="assets/svg/checkmark-brown-icon.svg" alt="Brown Checkmark" aria-hidden="true">
+                Group discounts offered
+              </li>
+              <li class="includes-item">
+                <img src="assets/svg/checkmark-brown-icon.svg" alt="Brown Checkmark" aria-hidden="true">
+                Priority seating options
+              </li>
+              <li class="includes-item">
+                <img src="assets/svg/checkmark-brown-icon.svg" alt="Brown Checkmark" aria-hidden="true">
+                Family photo package
+              </li>
+            </ul>
+          </div>
+
+          <div class="ticket-information-container">
+            <button class="ticket-information-btn" aria-label="Book Family Package now">Book now</button>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- Practical Information Section -->
+    <section class="practical-information" aria-labelledby="practical-info-main-heading">
+      <div class="section-divider">
+        <hr class="line left-line">
+        <img src="assets/svg/location-headline.svg" alt="" aria-hidden="true">
+        <hr class="line right-line">
+      </div>
+
+      <div class="practical-information-headline">
         <h2>Practical information</h2>
         <p>Everything you need to know for your visit</p>
       </div>
 
       <!-- Cards-->
       <div class="practical-information-grid-container">
-
         <!-- Card 1 Location -->
         <div id="location" class="location-card">
           <div class="location-content">
             <div id="location-icon-container" class="practical-information-icon-circle">
-              <img src="assets/location-icon.svg" alt="">
+              <img src="assets/svg/location-icon.svg" alt="Location Icon" aria-hidden="true">
             </div>
-            <!-- Center title and paragraph  -->
+            <!-- Center Title and Paragraph  -->
             <div class="info-location-card-text-container">
               <h3>Location</h3>
-              <p> Esbjerg Amatør Teater - Skartyden<br>
+              <p>Esbjerg Amatør Teater - Skartyden<br>
                 Kirkegade 51, 6700 Esbjerg<br>
               </p>
-              <button class="location-btn"><a
-                  href="https://www.google.com/maps/dir//Kirkegade+51,+6700+Esbjerg/@55.5646976,9.7452032,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x464b21375c01b8b5:0x724ad2e33a4f5327!2m2!1d8.4501049!2d55.4691023?entry=ttu&g_ep=EgoyMDI1MTIwMi4wIKXMDSoASAFQAw%3D%3D"
-                  target="_blank">Open to Maps</a></button>
+              <a class="location-btn"
+                href="https://www.google.com/maps/dir//Kirkegade+51,+6700+Esbjerg/@55.5646976,9.7452032,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x464b21375c01b8b5:0x724ad2e33a4f5327!2m2!1d8.4501049!2d55.4691023?entry=ttu&g_ep=EgoyMDI1MTIwMi4wIKXMDSoASAFQAw%3D%3D"
+                target="_blank" rel="noopener noreferrer"
+                aria-label="Open Esbjerg Amatør Teater location in Google Maps">
+                Open to Maps
+              </a>
             </div>
           </div>
         </div>
@@ -765,13 +717,13 @@
         <div id="show-duration" class="show-duration-card">
           <div class="show-duration-content">
             <div id="show-duration-icon-container" class="practical-information-icon-circle">
-              <img src="assets/time-icon.svg" alt="">
+              <img src="assets/svg/time-icon-practical-information.svg" alt="Time Icon" aria-hidden="true">
             </div>
             <!-- Center title and paragraph -->
             <div class="info-location-card-text-container">
               <h3>Show Duration</h3>
-              <p>Full Performance: 2 hours 30 minutes</p>
-              <p>Matinée Performance: 2 hours</p>
+              <p><strong>Performance:</strong> 2 hours 30 minutes</p>
+              <p><strong>Matinée Performance:</strong> 2 hours</p>
               <p>Includes one 15-minute intermission with refreshments available</p>
             </div>
           </div>
@@ -781,7 +733,7 @@
         <div id="public-transport" class="public-transport-card">
           <div class="public-transport-content">
             <div id="public-transport-icon-container" class="practical-information-icon-circle">
-              🚌
+              <img src="assets/svg/transport-icon.svg" alt="Transport Icon" aria-hidden="true">
             </div>
             <div class="info-location-card-text-container">
               <h3>Public Transport</h3>
@@ -796,7 +748,7 @@
         <div id="parking" class="parking-card">
           <div class="parking-content">
             <div id="parking-icon-container" class="practical-information-icon-circle">
-              🚗
+              <img src="assets/svg/car-icon.svg" alt="Parking Icon" aria-hidden="true">
             </div>
             <div class="info-location-card-text-container">
               <h3>Parking</h3>
@@ -811,14 +763,16 @@
         <div id="accessibility" class="accessibility-card">
           <div class="accessibility-content">
             <div id="accessibility-icon-container" class="practical-information-icon-circle">
-              ♿
+              <img src="assets/svg/accessibility-icon.svg" alt="Accessibility Icon" aria-hidden="true">
             </div>
             <div class="info-location-card-text-container">
               <h3>Accessibility</h3>
-              <p>Wheelchair accessible entrance and seating</p>
-              <p>Assisted listening devices available</p>
-              <p>Accessible restrooms on all levels</p>
-              <p>Service animals welcome</p>
+              <ul>
+                <li>Wheelchair accessible entrance and seating</li>
+                <li>Assisted listening devices available</li>
+                <li>Accessible restrooms on all levels</li>
+                <li>Service animals welcome</li>
+              </ul>
             </div>
           </div>
         </div>
@@ -827,64 +781,75 @@
         <div id="arrive-early" class="arrive-early-card">
           <div class="arrive-early-content">
             <div id="arrive-early-icon-container" class="practical-information-icon-circle">
-              ☕
+              <img src="assets/svg/arrive-early-icon.svg" alt="Arrive Early Icon" aria-hidden="true">
             </div>
             <div class="info-location-card-text-container">
               <h3>Arrive Early</h3>
-              <p>We recommend arriving **30 minutes** before showtime:</p>
-              <p>Find parking and get seated comfortably</p>
-              <p>Visit our lobby gift shop</p>
-              <p>Enjoy pre-show refreshments</p>
-              <p>Take photos in our magical photo booth</p>
+              <p>We recommend arriving <strong>30 minutes</strong> before showtime:</p>
+              <ul>
+                <li>Find parking and get seated comfortably</li>
+                <li>Visit our lobby gift shop</li>
+                <li>Enjoy pre-show refreshments</li>
+                <li>Take photos in our magical photo booth</li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-
     <!-- Frequently Asked Questions Section -->
-    <section class="frquently-asked-questions">
+    <section class="frquently-asked-questions" aria-labelledby="faq-main-heading">
       <div class="section-divider">
         <hr class="line left-line">
-        <img src="assets/location-icon.svg" alt="">
+        <img src="assets/svg/frequently-questions-icon.svg" alt="" aria-hidden="true">
         <hr class="line right-line">
       </div>
-
       <div class="frequently-asked-headline">
         <h2>Frequently Asked Questions</h2>
-        <p>Everything you need to know for your visit</p>
+        <p>Everything you need to know</p>
       </div>
 
       <div class="frequently-asked-questions-grid-container">
-
         <!-- Tickets & Bookings Section -->
-        <h2 class="section-heading">Tickets & Bookings</h2>
+        <h3 class="section-heading">Tickets & Bookings</h3>
         <details class="question-box">
           <!-- 1st Question -->
-          <summary>How do I purchase tickets?</summary>
+          <summary>How do I purchase tickets?
+            <img src="assets/svg/arrow-down-icon.svg" class="question-arrow" alt="Arrow Down" aria-hidden="true">
+          </summary>
           <div class="answer-content">
             <p>Tickets can be purchased online through our official website or at the box office.</p>
           </div>
         </details>
+
         <!-- 2nd Question -->
         <details class="question-box">
-          <summary>Can I choose my seats?</summary>
+          <summary>Can I choose my seats?
+            <img src="assets/svg/arrow-down-icon.svg" class="question-arrow" alt="Arrow Down" aria-hidden="true">
+          </summary>
           <div class="answer-content">
             <p>Yes, you can choose your seats during the online booking process, subject to availability.</p>
           </div>
         </details>
+
         <!-- 3rd Question -->
         <details class="question-box">
-          <summary>What is your cancellation policy?</summary>
+          <summary>What is your cancellation policy?
+            <img src="assets/svg/arrow-down-icon.svg" class="question-arrow" alt="Arrow Down" aria-hidden="true">
+          </summary>
           <div class="answer-content">
-            <p>Cancellations are permitted up to 24 hours before the performance, subject to a booking fee. Please check
+            <p>Cancellations are permitted up to 24 hours before the performance, subject to a booking fee. Please
+              check
               our full policy for details.</p>
           </div>
         </details>
+
         <!-- 4th Question -->
         <details class="question-box">
-          <summary>Are group discounts available?</summary>
+          <summary>Are group discounts available?
+            <img src="assets/svg/arrow-down-icon.svg" class="question-arrow" alt="Arrow Down" aria-hidden="true">
+          </summary>
           <div class="answer-content">
             <p>Group discounts are available for parties of 10 or more. Please contact our group bookings office for
               pricing.</p>
@@ -892,73 +857,94 @@
         </details>
 
         <!-- Arrival & Practicalities Section -->
-        <h2 class="section-heading">Arrival & Practicalities</h2>
-
+        <h3 class="section-heading">Arrival & Practicalities</h3>
         <!-- 1st Question -->
         <details class="question-box">
-          <summary>When should we arrive?</summary>
+          <summary>When should we arrive?
+            <img src="assets/svg/arrow-down-icon.svg" class="question-arrow" alt="Arrow Down" aria-hidden="true">
+          </summary>
           <div class="answer-content">
             <p>We recommend arriving at least 30 minutes before the scheduled start time to allow for seating and any
               pre-show purchases.</p>
           </div>
         </details>
+
         <!-- 2nd Question -->
         <details class="question-box">
-          <summary>Is there parking available?</summary>
+          <summary>Is there parking available?
+            <img src="assets/svg/arrow-down-icon.svg" class="question-arrow" alt="Arrow Down" aria-hidden="true">
+          </summary>
           <div class="answer-content">
             <p>Limited street parking is available, and there are several paid parking garages within a two-block
               radius.</p>
           </div>
         </details>
+
         <!-- 3rd Question -->
         <details class="question-box">
-          <summary>Can I bring food or drinks into the theatre?</summary>
+          <summary>Can I bring food or drinks into the theatre?
+            <img src="assets/svg/arrow-down-icon.svg" class="question-arrow" alt="Arrow Down" aria-hidden="true">
+          </summary>
           <div class="answer-content">
             <p>Outside food and drinks are generally not permitted. Concessions are available for purchase inside the
               theatre.</p>
           </div>
         </details>
+
         <!-- 4th Question -->
         <details class="question-box">
-          <summary>Is the theatre wheelchair accessible?</summary>
+          <summary>Is the theatre wheelchair accessible?
+            <img src="assets/svg/arrow-down-icon.svg" class="question-arrow" alt="Arrow Down" aria-hidden="true">
+          </summary>
           <div class="answer-content">
             <p>Yes, the theatre is fully wheelchair accessible. Please inform the box office when booking so we can
               allocate the most suitable seating.</p>
           </div>
         </details>
 
-        <!-- >Kids' Questions Section -->
-        <h2 class="section-heading">Kids' Questions</h2>
+        <!-- > Kids' Questions Section -->
+        <h3 class="section-heading">Kids' Questions</h3>
         <!-- 1st Question  -->
         <details class="question-box">
-          <summary>When should we arrive?</summary>
+          <summary>Is it scary?
+            <img src="assets/svg/arrow-down-icon.svg" class="question-arrow" alt="Arrow Down" aria-hidden="true">
+          </summary>
           <div class="answer-content">
-            <p>We recommend arriving at least 30 minutes before the scheduled start time to allow for seating and any
-              pre-show purchases.</p>
+            <p>The show is generally designed to be family-friendly and is not scary, but it does include some loud
+              sound effects and dramatic lighting sequences. Parental discretion is advised.</p>
           </div>
         </details>
+
         <!-- 2nd Question -->
         <details class="question-box">
-          <summary>Is there parking available?</summary>
+          <summary>Can I dress up like the characters?
+            <img src="assets/svg/arrow-down-icon.svg" class="question-arrow" alt="Arrow Down" aria-hidden="true">
+          </summary>
           <div class="answer-content">
-            <p>Limited street parking is available, and there are several paid parking garages within a two-block
-              radius.</p>
+            <p>Yes, costumes are highly encouraged! We love seeing our guests dressed up. Please ensure costumes do
+              not
+              include large props that could obstruct aisles or seating.</p>
           </div>
         </details>
+
         <!-- 3rd Question -->
         <details class="question-box">
-          <summary>Can I bring food or drinks into the theatre?</summary>
+          <summary>How long is the show?
+            <img src="assets/svg/arrow-down-icon.svg" class="question-arrow" alt="Arrow Down" aria-hidden="true">
+          </summary>
           <div class="answer-content">
-            <p>Outside food and drinks are generally not permitted. Concessions are available for purchase inside the
-              theatre.</p>
+            <p>The running time is approximately 2 hours, including a 15-minute intermission.</p>
           </div>
         </details>
+
         <!-- 4th Question -->
         <details class="question-box">
-          <summary>Is the theatre wheelchair accessible?</summary>
+          <summary>What if my child needs to leave during the show?
+            <img src="assets/svg/arrow-down-icon.svg" class="question-arrow" alt="Arrow Down" aria-hidden="true">
+          </summary>
           <div class="answer-content">
-            <p>Yes, the theatre is fully wheelchair accessible. Please inform the box office when booking so we can
-              allocate the most suitable seating.</p>
+            <p>If you or your child needs to step out, please do so quietly. Our ushers will help you return to your
+              seats at an appropriate break in the performance.</p>
           </div>
         </details>
 
@@ -966,93 +952,85 @@
         <div class="more-questions">
           <div class="more-questions-content">
             <p>Still have questions? We are here to help!</p>
-            <button><a href="pages/contact.html">Contact Us</a></button>
+            <a href="pages/contact.html" class="more-questions-contact-button">Contact Us</a>
           </div>
         </div>
       </div>
     </section>
 
-
     <!-- Footer Section -->
-    <section class="footer">
+    <footer class="footer">
       <div class="site-footer">
-        <div class="footer-decoration">
-          <img src="assets/footer-icon.svg" alt="">
+        <div class="footer-decoration" aria-hidden="true">
+          <img src="assets/svg/footer-icon.svg" alt="">
         </div>
 
         <div class="footer-content-grid">
-
-          <div class="footer-col production-info">
+          <div class="footer-info production-info">
             <h3>The Brothers Lionheart</h3>
-            <p>Experience the magic of Astrid Lindgren's timeless tale brought to life on stage. A theatrical adventure
+            <p>Experience the magic of Astrid Lindgren's timeless tale brought to life on stage. A theatrical
+              adventure
               the whole family will treasure.</p>
             <p class="small-text">Based on the novel by Astrid Lindgren</p>
           </div>
 
-          <div class="footer-col quick-links">
+          <nav class="footer-info quick-links" aria-label="Quick Links">
             <h3>Quick Links</h3>
             <ul>
-              <li><a href="index.html">Home</a></li>
               <li><a href="pages/about-us.html">About Us</a></li>
               <li><a href="pages/contact.html">Contact</a></li>
             </ul>
-          </div>
+          </nav>
 
-          <div class="footer-col contact-info">
+          <div class="footer-info contact-info">
             <h3>Contact Us</h3>
-
-            <div class="contact-item">
-              <img src="assets/location-footer-icon.svg" alt="">
-              <div>
-                <p>Esbjerg Amatør Teater - Skartyden</p>
-                <p>Kirkegade 51, 6700 Esbjerg</p>
+            <address>
+              <div class="contact-item">
+                <img src="assets/svg/location-footer-icon.svg" alt="Location Adress Icon">
+                <div>
+                  <p>Esbjerg Amatør Teater - Skartyden</p>
+                  <p>Kirkegade 51, Esbjerg, Denmark</p>
+                </div>
               </div>
-            </div>
 
-            <div class="contact-item">
-              <img src="assets/phone-footer-icon.svg" alt="">
-              <p>(555) 123-4567</p>
-            </div>
+              <div class="contact-item">
+                <img src="assets/svg/phone-footer-icon.svg" alt="Phone Number Icon">
+                <p><a href="tel:+4525470683">+45 25 47 06 83</a></p>
+              </div>
 
-            <div class="contact-item">
-              <img src="assets/mail-footer-icon.svg" alt="">
-              <p>info@lionhearttheatre.com</p>
-            </div>
+              <div class="contact-item">
+                <img src="assets/svg/mail-footer-icon.svg" alt="Email Adress Icon">
+                <p class="footer-email"><a href="mailto:eatskarntyden@gmail.com">eatskarntyden@gmail.com</a></p>
+              </div>
+            </address>
 
-            <h4>Follow Us</h4>
-            <div class="social-links">
-              <a href="#" class="social-icon facebook">f</a>
-              <a href="#" class="social-icon instagram">📸</a>
-              <a href="#" class="social-icon twitter">🐦</a>
+            <h3>Follow Us</h3>
+            <div class="social-links" role="list" aria-labelledby="follow-us-heading">
+              <a href="https://www.facebook.com/skarntyden/?locale=da_DK" class="social-icon facebook"
+                aria-label="Follow us on Facebook"><img src="assets/svg/facebook-icon.svg" alt="Facebook Logo"></a>
+              <a href="#" class="social-icon instagram" aria-label="Follow us on Instagram"><img
+                  src="assets/svg/insta-icon.svg" alt="Instagram Logo"></a>
+              <a href="#" class="social-icon whatsapp" aria-label="Contact us via WhatsApp"><img
+                  src="assets/svg/whatsapp-icon.svg" alt="Whatsapp Logo"></a>
             </div>
           </div>
-
         </div>
 
-        <hr class="footer-divider">
-
+        <hr class="footer-divider" aria-hidden="true">
         <div class="footer-bottom">
-          <p class="copyright">© 2025 The Brothers Lionheart Theatre Production.</p>
-          <p class="copyright">All rights reserved.</p>
-          <div class="legal-links">
+          <div class="copyright">
+            <p>© 2025 The Brothers Lionheart Theatre Production. All rights reserved.</p>
+          </div>
+          <nav class="legal-links" aria-label="Legal Links">
             <a href="#">Privacy Policy</a>
             <a href="#">Terms of Service</a>
-          </div>
+          </nav>
         </div>
       </div>
-    </section>
+    </footer>
 
-
-
-
-
-
-
-
-
-
-    <script src="js/main.js"></script>
   </div>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
