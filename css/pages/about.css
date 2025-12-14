@@ -1,0 +1,319 @@
+/* Heading subtext */
+.hero-text .title-hero-container-subtext {
+    color: black;
+    width: 100%;
+    font-family: "Crimson Text", sans-serif;
+};
+
+/* Centering h1 start */
+#hero-container {
+    justify-content: center;
+}
+
+header .hero-container {
+    justify-content: center;
+}
+
+/* Centering h1 end */
+
+#about-h1 {
+    font-weight: 400;
+}
+
+.hero-text {
+    width: 100%;
+}
+
+.hero-text h1 {
+    font-weight: 400;
+    width: initial;
+}
+
+@media screen and (max-width: 553px) {
+    .hero-text h1 {
+        margin: 40px 0;
+    }
+}
+
+/* Header Section */
+#about-us-header {
+    background-image: url("../../assets/img/about-us-hero.jpg") !important;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center ;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin: 0 auto;
+    min-height: 100vh;
+}
+
+/* Our mission section */
+.our-mission {
+    min-height: 900px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  width: 90%;
+  max-width: var(--width-12col);
+  margin: 0 auto;
+} 
+
+.our-mission-img1 {
+    grid-column: 1 / span 6;
+    border-radius: 10px;
+    border: 4px solid var(--green-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url("../../assets/img/mission-image-1.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* width: 496px; */
+    width: 570px;
+    height: 374px;
+}
+
+.our-mission-img2 {
+    grid-column: 7 / span 6;
+    border-radius: 10px;
+    border: 4px solid var(--brown-color);
+    transition: box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url("../../assets/img/about-us-hero.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* width: 496px; */
+    width: 570px;
+    height: 374px;
+    grid-column: 8 / span 5;
+}
+
+@media screen and (max-width: 1334px) {
+    .our-mission-img2, .our-mission-img1 {
+        width: 530px;
+        height: 330px;
+    }
+}
+
+@media screen and (max-width: 1244px) {
+    .our-mission-img2, .our-mission-img1 {
+        width: 500px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 1154px) {
+    .our-mission-img2, .our-mission-img1 {
+        width: 450px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 1048px) {
+    .our-mission-img2, .our-mission-img1 {
+        width: 430px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 1048px) {
+    .our-mission-img2, .our-mission-img1 {
+        width: 410px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 958px) {
+    .our-mission-img2, .our-mission-img1 {
+        width: 390px;
+        height: 280px;
+    }
+}
+
+@media screen and (max-width: 936px) {
+    #hide-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 936px) {
+    .our-mission-img2, .our-mission-img1 {
+        width: 496px;
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 682px) {
+    .our-mission-img2, .our-mission-img1 {
+        width: 496px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .our-mission-img2, .our-mission-img1 {
+        width: 360px;
+        height: 200px;
+    }
+}
+
+.grid-container {
+    padding: 0;
+}
+
+#mission {
+    min-height: 100%;
+    background-color: var(--primary-text-color);
+}
+
+.our-mission-content {
+    grid-column: 1 / span 12;
+    padding: 2.1875em;
+    border: 1px solid var(--primary-text-color);
+    border-radius: 10px;
+    background-color: var(--card-color);
+    min-height: 485px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.mission-content-block p {
+    color: #FAF3E0;
+    text-align: center;
+    font-family: var(--font-serif);
+    font-size: 1.5em;
+    line-height: 2;
+    padding: 2.1em;
+}
+
+@media screen and (max-width: 978px) {
+    .mission-content-block p {
+        padding: .3em;
+        font-size: 1.3em;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .our-mission-text {
+        width: 360px;
+    }
+}
+
+.the-story-content-block p:first-child {
+    padding: 1em;
+    font-size: 1.5em;
+}
+
+@media screen and (max-width: 530px) {
+    .our-mission-text {
+        font-size: .8em;
+    }
+}
+
+.our-mission-text {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: var(--grid-gap);
+    width: 90%;
+    max-width: var(--width-12col);
+    margin: 0 auto;
+    margin-top:50px;
+    border: 4px solid var(--hover-dark-green-btn);
+    border-radius: 14px;
+}
+
+.card-section {
+    margin-bottom: 100px;
+}
+
+.values-card-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  width: 90%;
+  max-width: var(--width-12col);
+  margin: 3.125em auto;
+}
+
+@media screen and (max-width: 992px) {
+    .values-card-wrapper {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 814px) {
+    .values-card-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+.cardr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2.5em 1.25em;
+    border-radius: 12px;
+    min-height: 250px;
+    text-align: start;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: start;
+    justify-content: space-evenly;
+    background-color: #BBC5B8;
+    min-height: 180px;
+}
+
+.card-text {
+    color: #000;
+    font-size: 1.25em;
+    line-height: 1.6;
+    display: flex;
+    gap:20px;
+    flex-direction: column;
+}
+
+.card-text h3 {
+    font-weight: 500;
+    color: #000;
+    margin: 0 0 0.9375em 0;
+    font-size: 1.5em;
+}
+
+.card-icon-container {
+    border: 2px solid #909A8D;
+}
+
+.card-icon-container .icon-circle {
+    background-color: #909A8D;
+}
+
+
+.card-icon {
+    border: 0;
+    color: blue;
+    background-color: var(--primary-text-color) !important;
+}
+
+.card-icon img {
+    width: 70px;
+    height: 70px;
+}
