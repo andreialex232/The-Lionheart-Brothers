@@ -1,7 +1,7 @@
 /* General */
 h1 {
-  color: #fff !important;
-  font-size: 5.625em !important;
+  color: #FAF3E0 !important;
+  font-size: 6em !important;
 }
 
 @media screen and (max-width: 770px) {
@@ -12,9 +12,10 @@ h1 {
 
 @media screen and (max-width: 570px) {
   h1 {
-    font-size: 2em !important;
+    font-size: 4em !important;
   }
 }
+
 
 h4 {
   font-size: 1.25em;
@@ -54,6 +55,20 @@ li::marker {
     color: #fff;
     width: 100%;
 };
+
+.contact-subtext {
+  
+}
+
+#contact-subtext {
+  color: #FAF3E0 !important;
+}
+
+@media screen and (max-width: 570px) {
+  #hero-container {
+    padding: 20px 20px 60px 20px;
+  }
+}
 
 .contact-hero {
   display: flex;
@@ -97,6 +112,50 @@ li::marker {
     /* left: -100px; */
     left: -6.25em
   }
+}
+
+#about-us-header {
+    background-image: url("../../assets/img/contact-hero.jpg") !important;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center 10%;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 600px) {
+  #about-us-header {
+    background-position: 60% 20%;
+  }
+}
+
+#hero-container {
+    padding-bottom: 10px;
+}
+
+@media screen and (max-width: 762px) {
+  #hero-container {
+    min-height: auto;
+  }
+}
+
+#about-h1 {
+    font-weight: 400;
+}
+
+.hero-text {
+    width: 100%;
+}
+
+.hero-text h1 {
+    font-weight: 400;
+    width: initial;
 }
 
 /* Contact cards in header */
@@ -168,6 +227,13 @@ li::marker {
   display: flex;
   flex-direction: column;
   gap: 2.25em;
+}
+
+
+.follow-us {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
 }
 
 .contact-card-start p {
@@ -276,6 +342,7 @@ li::marker {
   gap: 0.5em;
   /* padding-left: 20px; */
   padding-left: 1.25em;
+  padding-bottom: 30px;
 }
 
 
@@ -435,20 +502,25 @@ input::placeholder, textarea::placeholder {
 }
 
 .submit-button {  
-  box-shadow: 0px 10px 15px -3px #0000001A;
+  height: 60px;
   display: flex;
-  align-items: center;
   justify-content: center;
-  gap: 1rem;
-  height: 3.75em;
-  background-color: var(--primary-text-color);
-  color: white;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
   border: none;
-  /* border-radius: 5px; */
-  font-size: 1.25em;
   cursor: pointer;
-  font-weight: 200;
-  font-family: "Crimson Text", sans-serif;
+  font-family: "Crimson Pro", serif;
+  box-shadow: 0px 4px 6px -4px rgba(0, 0, 0, 0.1),
+    0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.4s ease-in-out;
+  text-decoration: none;
+  background-color: #905654;
+  color: #faf3e0;
+}
+
+.submit-button:hover {
+  background-color: #6a3a3a;
 }
 
 /* Find-us section */ 
@@ -602,6 +674,17 @@ iframe {
   align-items: center;
   gap: 2em;
   margin-top: 2.5em;
+}
+
+@media screen and (max-width: 480px) {
+  .button-container {
+    flex-direction: column;
+  }
+
+  .quick-answers-container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 .button-faq { 

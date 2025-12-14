@@ -10,17 +10,16 @@
 </head>
 <body>
     <div class="container">
-    <!-- For making the background dark (for sidebar focus) (Responsiveness) -->
+                <!-- For making the background dark (for sidebar focus) (Responsiveness) -->
     <div id="mobile-overlay"></div>
     <!-- Navigation Bar -->
     <nav class="navigation fixed">
       <div class="menu-container">
         <!-- Logo of the Play -->
         <div class="logo-navbar">
-          <img src="../assets/brothers-lion-logo.svg" alt="Brothers Lionheart Logo">
+          <img src="../assets/svg/brothers-lion-logo.svg" alt="brothers-lionheart-logo">
         </div>
         <ul>
-          <li><a href="../index.html">Home</a></li>
           <li><a href="about-us.html">About Us</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
@@ -51,37 +50,36 @@
     <!-- Header Area -->
         <!-- Header Area -->
          
-    <header id="about-us-header" class="hero">
-      <div id="contact-hero" class="hero-container contact-hero">
-
-        <div class="top-svg">
-          <img src="../assets/hero-top-contact-icon.svg" alt="" aria-hidden="true">
+<header id="about-us-header" class="hero about-us-header" role="banner">
+      <div id="hero-container" class="hero-container">
+        <div class="hero-headline-icon">
+          <img src="../assets/svg/contact-header-svg.svg" alt="" aria-hidden="true">
         </div>
-
         <div class="hero-text">
-          <div class="title-hero-container">
-            <h1>Get in Touch</h1>
-          </div>
-          <p class="title-hero-container-subtext">We'd love to hear from you</p>
+          <h1 id="about-h1">Get in Touch</h1>
+          <p class="contact-subtext" id="contact-subtext">We'd love to hear from you</p>
+        </div>
+      </div>
+    
            <!-- Contact Cards -->
       <div id="contact-cards-wrapper" class="contact-cards-wrapper">
         <!-- Contact card start -->
         <div class="contact-card-start">
-            <img src="../assets/tel-black.svg" alt="" aria-hidden="true">
+            <img src="../assets/svg/phone-icon-black.svg" alt="" aria-hidden="true" style="height: 40px;">
             <h2>Call us</h2>
             <p>+45 75 12 34 56</p>
         </div>
       <!-- contact card end -->
                <!-- Contact card start -->
         <div class="contact-card-start">
-            <img src="../assets/email-black.svg" alt="" aria-hidden="true">
+            <img src="../assets/svg/email-icon-black.svg" alt="" aria-hidden="true" style="height: 45px;">
             <h2>Email Us</h2>
             <p>info@skarntyden.dk</p>
       </div>
       <!-- contact card end -->
                <!-- Contact card start -->
         <div class="contact-card-start">
-            <img src="../assets/location-black.svg" alt="" aria-hidden="true">
+            <img src="../assets/svg/location-icon-black.svg" alt="" aria-hidden="true" style="height: 40px;">
             <h2>Visit Us</h2>
             <p>Esbjerg, Denmark</p>
       </div>
@@ -98,7 +96,7 @@
             <section>
               <div class="form-heading">
                 <div>
-                  <img src="../assets/send-message-contact.svg" alt="" aria-hidden="true">
+                  <img src="../assets/svg/chat-icon-black.svg" alt="" aria-hidden="true">
                   <h2>Send us a message</h2>
                 </div>
                 <p class="form-heading-subtext">Fill out the form below and we'll get back to you as soon as possible.</p>
@@ -108,21 +106,21 @@
                 <div class="form-field">
                   <label for="name">Your Name *</label>
                   <div class="input-wrapper">
-                    <img class="input-icon" src="../assets/input-name.svg" alt="" aria-hidden="true">
+                    <img class="input-icon" src="../assets/svg/name-input.svg" alt="" aria-hidden="true">
                   </div>
                   <input class="input-with-icon" placeholder="Enter your full name" type="text" id="name" name="name">
                 </div>
                 <div class="form-field">
                   <label for="email">Email Address *</label>
                   <div class="input-wrapper">
-                    <img class="input-icon" src="../assets/input-email.svg" alt="" aria-hidden="true">
+                    <img class="input-icon" src="../assets/svg/email-input.svg" alt="" aria-hidden="true">
                   </div>
                   <input class="input-with-icon" placeholder="your.email@example.com" type="email" id="email" name="email">
                 </div>
                 <div class="form-field">
                   <label for="tel">Phone Number *</label>
                   <div class="input-wrapper">
-                    <img class="input-icon" src="../assets/input-tel.svg" alt="" aria-hidden="true">
+                    <img class="input-icon" src="../assets/svg/phone-input.svg" alt="" aria-hidden="true">
                   </div>
                   <input class="input-with-icon" placeholder="+45 12 34 56 78" type="tel" name="tel" id="tel">
                 </div>
@@ -134,7 +132,7 @@
                 <label for="message">Your Message *</label>
                 <textarea placeholder="Tell us how we can help you..." name="message" id="message"></textarea>
                 </div>
-                <button type="submit" class="submit-button"><img src="../assets/send-email-svg.svg" alt="">Send Message</button>
+                <button type="submit" class="submit-button"><img src="../assets/svg/submit-icon.svg" alt="">Send Message</button>
               </form>
             </section>
           </div>
@@ -143,7 +141,7 @@
           <div class="info-section-container">
             <section class="info-section">
               <div class="info-section-heading">
-                <img src="../assets/office-hours.svg" alt="" aria-hidden="true">
+                <img src="../assets/svg/clock-icon-black.svg" alt="" aria-hidden="true">
                 <h3>Office Hours</h3>
               </div>
               <!--  Office Hours Content -->
@@ -165,7 +163,7 @@
             <!-- Visit our theater -->
             <section class="info-section">
               <div class="info-section-heading">
-                <img src="../assets/location-black.svg" alt="" aria-hidden="true">
+                <img src="../assets/svg/location-icon-black.svg" alt="" aria-hidden="true">
                 <h3>Visit Our Theater</h3>
               </div>
               <div class="info-section-visit-location">
@@ -194,11 +192,11 @@
             <section class="info-section-journey">
               <div class="info-section-journey-content">
                 <h3>Follow Our Journey</h3>
-                <div>
-                  <img src="../assets/contact-fb.svg" alt="Facebook Icon">
-                  <img src="../assets/contact-ig.svg" alt="Instagram Icon">
-                  <img src="../assets/contact-twitter.svg" alt="Twitter Icon">
-                </div>
+                <ul class="follow-us">
+                  <li><a aria-label="Follow us on Facebook" href="https://www.facebook.com/skarntyden/"><img src="../assets/svg/facebook-link.svg" alt="Facebook Icon"></a></li>
+                  <li><a aria-label="Follow us on Instagram" href="https://www.instagram.com/eatskarntyden/"><img src="../assets/svg/instagram-link.svg" alt="Instagram Icon"></a></li>
+                  <li><a aria-label="Follow us on Twitter" href=""><img src="../assets/svg/twitter-link.svg" alt="Twitter Icon"></a></li>
+                </ul>
               </div>
             </section>
           </div>
@@ -209,7 +207,7 @@
           <div class="find-us-section">
             <div class="section-divider">
               <hr class="line left-line">
-              <img src="../assets/location-icon.svg" alt="">
+              <img src="../assets/svg/location-icon-black.svg" alt="">
               <hr class="line right-line">
           </div>
             <!-- FIND-US H2 --> 
@@ -236,15 +234,15 @@
               </div>
               <div class="address-section-options">
                   <div>
-                    <img src="../assets/tel-primary-color.svg" alt="Phone Icon With Site's Primary Colors">
+                    <img src="../assets/svg/phone-icon-primary-colors.svg" alt="" aria-hidden="true">
                     +45 75 12 34 56
                   </div>
                   <div>
-                    <img src="../assets/email-primary-color.svg" alt="Email Icon With Site's Primary Colors">
+                    <img src="../assets/svg/email-icon-primary-colors.svg" alt="" aria-hidden="true">
                     info@skarntyden.dk
                   </div>
                   <div>
-                    <img src="../assets/clock-primary-color.svg" alt="Clock Icon With Site's Primary Colors">
+                    <img src="../assets/svg/clock-icon-primary-colors.svg" alt="" aria-hidden="true">
                     Mon - Fri 10:00-17:00
                   </div>
               </div>
@@ -258,82 +256,84 @@
               Check out our frequently asked questions or reach out directly for group bookings and special requests.
             </div>
             <div class="button-container">
-              <button class="button-faq">View FAQs</button>
-              <button class="button-group">Group Bookings</button>
+              <a class="hero-ticket-info-btn">View FAQs <!-- button-faq --></a>
+              <a class="explore-the-story-btn">Group Bookings <!-- button-group --></a>
             </div>
           </div>
 
 
 
 
-          <!-- Footer Section -->
-    <section class="footer">
+    <!-- Footer Section -->
+    <footer class="footer">
       <div class="site-footer">
-        <div class="footer-decoration">
-          <img src="assets/footer-icon.svg" alt="">
+        <div class="footer-decoration" aria-hidden="true">
+          <img src="assets/svg/footer-icon.svg" alt="">
         </div>
 
         <div class="footer-content-grid">
-
-          <div class="footer-col production-info">
+          <div class="footer-info production-info">
             <h3>The Brothers Lionheart</h3>
-            <p>Experience the magic of Astrid Lindgren's timeless tale brought to life on stage. A theatrical adventure
+            <p>Experience the magic of Astrid Lindgren's timeless tale brought to life on stage. A theatrical
+              adventure
               the whole family will treasure.</p>
             <p class="small-text">Based on the novel by Astrid Lindgren</p>
           </div>
 
-          <div class="footer-col quick-links">
+          <nav class="footer-info quick-links" aria-label="Quick Links">
             <h3>Quick Links</h3>
             <ul>
-              <li><a href="index.html">Home</a></li>
               <li><a href="pages/about-us.html">About Us</a></li>
               <li><a href="pages/contact.html">Contact</a></li>
             </ul>
-          </div>
+          </nav>
 
-          <div class="footer-col contact-info">
+          <div class="footer-info contact-info">
             <h3>Contact Us</h3>
-
-            <div class="contact-item">
-              <img src="assets/location-footer-icon.svg" alt="">
-              <div>
-                <p>Esbjerg Amatør Teater - Skartyden</p>
-                <p>Kirkegade 51, 6700 Esbjerg</p>
+            <address>
+              <div class="contact-item">
+                <img src="../assets/svg/location-footer-icon.svg" alt="Location Adress Icon">
+                <div>
+                  <p>Esbjerg Amatør Teater - Skartyden</p>
+                  <p>Kirkegade 51, Esbjerg, Denmark</p>
+                </div>
               </div>
-            </div>
 
-            <div class="contact-item">
-              <img src="assets/phone-footer-icon.svg" alt="">
-              <p>(555) 123-4567</p>
-            </div>
+              <div class="contact-item">
+                <img src="../assets/svg/phone-footer-icon.svg" alt="Phone Number Icon">
+                <p><a href="tel:+4525470683">+45 25 47 06 83</a></p>
+              </div>
 
-            <div class="contact-item">
-              <img src="assets/mail-footer-icon.svg" alt="">
-              <p>info@lionhearttheatre.com</p>
-            </div>
+              <div class="contact-item">
+                <img src="../assets/svg/mail-footer-icon.svg" alt="Email Adress Icon">
+                <p class="footer-email"><a href="mailto:eatskarntyden@gmail.com">eatskarntyden@gmail.com</a></p>
+              </div>
+            </address>
 
-            <h4>Follow Us</h4>
-            <div class="social-links">
-              <a href="#" class="social-icon facebook">f</a>
-              <a href="#" class="social-icon instagram">📸</a>
-              <a href="#" class="social-icon twitter">🐦</a>
+            <h3>Follow Us</h3>
+            <div class="social-links" role="list" aria-labelledby="follow-us-heading">
+              <a href="https://www.facebook.com/skarntyden/?locale=da_DK" class="social-icon facebook"
+                aria-label="Follow us on Facebook"><img src="../assets/svg/facebook-icon.svg" alt="Facebook Logo"></a>
+              <a href="#" class="social-icon instagram" aria-label="Follow us on Instagram"><img
+                  src="../assets/svg/insta-icon.svg" alt="Instagram Logo"></a>
+              <a href="#" class="social-icon whatsapp" aria-label="Contact us via WhatsApp"><img
+                  src="../assets/svg/whatsapp-icon.svg" alt="Whatsapp Logo"></a>
             </div>
           </div>
-
         </div>
 
-        <hr class="footer-divider">
-
+        <hr class="footer-divider" aria-hidden="true">
         <div class="footer-bottom">
-          <p class="copyright">© 2025 The Brothers Lionheart Theatre Production.</p>
-          <p class="copyright">All rights reserved.</p>
-          <div class="legal-links">
+          <div class="copyright">
+            <p>© 2025 The Brothers Lionheart Theatre Production. All rights reserved.</p>
+          </div>
+          <nav class="legal-links" aria-label="Legal Links">
             <a href="#">Privacy Policy</a>
             <a href="#">Terms of Service</a>
-          </div>
+          </nav>
         </div>
       </div>
-    </section>
+    </footer>
 
     </div>
     <script src="js/main.js"></script>
