@@ -278,7 +278,10 @@
   background-size: cover;
   position: relative;
   margin: 0 auto;
+  margin-top: 80px;
+  min-height: calc(100vh - 80px);
 }
+
 
 /* Blur Background */
 .hero::before {
@@ -305,12 +308,13 @@
   flex-direction: column;
   align-items: center;
   max-width: var(--width-12col);
-  height: 100vh;
+  min-height: calc(100vh - 80px);
   margin: 0 auto;
 }
 
 .hero-headline-icon {
   padding-bottom: 20px;
+  padding-top: 50px
 }
 
 /* Hero Text*/
@@ -320,13 +324,13 @@
   align-items: center;
   text-align: center;
   margin: 0 auto;
-  width: 90%;
+  width: 80%;
 }
 
 /* Title Small*/
 .hero-pretitle {
   padding: 0;
-  margin: 15px 0 30px 0;
+  margin: 0 0 5px 0;
   font-size: 36px;
   font-weight: 400;
   color: var(--text-secondary);
@@ -343,7 +347,7 @@
 
 .hero-text p {
   font-family: "Crimson Text", serif;
-  font-size: 30px;
+  font-size: 25px;
   color: var(--text-primary);
   font-weight: 400;
   font-style: italic;
@@ -354,8 +358,11 @@
 /* Hero Buttons Container */
 .hero-btns-container {
   display: flex;
+  justify-content: center;
   gap: 20px;
   margin: 30px 0;
+  width: 90%;
+  padding-bottom: 50px;
 }
 
 .hero-ticket-info-btn,
@@ -397,38 +404,28 @@
   background-color: var(--btn-secondary-hover);
 }
 
-.hero-star {
-  display: flex;
-  position: absolute;
-  bottom: 80px;
-}
-
-.hero-star img {
-  position: relative;
-  width: 100%;
-  max-width: 100px;
-}
-
-/* Wavy Hero Image */
-
 
 /* ---------------------------------------------- Media Queries --------------------------------------------------- */
-@media (max-width: 1200px) {
-  .hero-pretitle {
-    font-size: 33px;
+
+@media (max-width: 1400px){
+  .hero {
+    min-height: 70vh;
   }
 
-  .hero-text h1 {
-    font-size: 90px;
-  }
-
-  .hero-text p {
-    font-size: 28px;
-    width: 80%;
+  .hero-container {
+    min-height: calc(70vh - 80px);
   }
 }
 
 @media (max-width: 992px) {
+   .hero {
+    min-height: 50vh;
+  }
+
+  .hero-container{
+    min-height: calc(50vh - 80px);
+  }
+
   .hero-pretitle {
     font-size: 30px;
   }
@@ -444,14 +441,18 @@
   .hero-ticket-info-btn,
   .explore-the-story-btn {
     height: 55px;
-    width: 200px;
+    width: 180px;
     font-size: 18px;
   }
 }
 
 @media (max-width: 768px) {
-  .hero-container {
-    min-height: 85vh;
+  .hero {
+    min-height: 60vh;
+  }
+
+  .hero-container{
+    min-height: calc(60vh - 80px);
   }
 
   .hero-text h1 {
@@ -480,18 +481,9 @@
     padding-top: 50px;
     padding-bottom: 10px;
   }
-
-  .custom-shape-divider-bottom-1765565201 svg {
-    width: 100%;
-    height: 100px;
-  }
 }
-
+ 
 @media (max-width: 567px) {
-  .hero-container {
-    min-height: 50vh;
-  }
-
   .hero-pretitle {
     font-size: 24px;
   }
@@ -499,7 +491,6 @@
   .hero-text h1 {
     font-size: 48px;
     width: 95%;
-    margin-bottom: 0;
   }
 
   .hero-text p {
@@ -509,7 +500,6 @@
 
   .hero-headline-icon {
     padding-top: 30px;
-    padding-bottom: 0;
   }
 
   .hero-btns-container {
@@ -521,14 +511,6 @@
     height: 50px;
     width: 230px;
     font-size: 16px;
-  }
-
-  .hero-star {
-    bottom: 15px;
-  }
-
-  .hero-star img {
-    max-width: 80px;
   }
 }
 
@@ -1163,11 +1145,6 @@
   background-color: var(--btn-primary-hover);
 }
 
-/* Button Icon */
-.ticket-info-btn img {
-  margin-left: 10px;
-}
-
 /* Last Container */
 .calendar-last-container {
   margin-bottom: 20px;
@@ -1364,11 +1341,6 @@
     white-space: nowrap;
     font-size: 12px;
   }
-
-  .ticket-info-btn img {
-    display: none;
-}
-
 }
 
 /* --------------------------------- Ticket Information Section --------------------------------------------*/
@@ -1530,19 +1502,20 @@
 
 .ticket-information-btn {
   min-width: 85%;
-  background-color: var(--btn-primary-bg);
-  color: var(--text-light);
+  background-color: transparent;
+  border: 3px solid var(--btn-primary-bg);
+  color: var(--text-secondary);
   font-family: "Crimson Pro", serif;
   font-size: 20px;
   padding: 18px 15px;
   margin-bottom: 30px;
-  border: none;
   cursor: pointer;
   transition: background-color 0.3s ease-in-out;
 }
 
 .ticket-information-btn:hover {
   background-color: var(--btn-primary-hover);
+  color: var(--text-light);
 }
 
 /* ---------------------------- Media Queries (Responsive Design) --------------------------------------- */
