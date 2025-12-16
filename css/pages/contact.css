@@ -159,6 +159,14 @@ li::marker {
     width: initial;
 }
 
+
+
+/* Idk why this hero-container likes to take the styles from main.css */
+#hero-container {
+  height: initial !important;
+  min-height: initial !important;
+}
+
 .hero-container {
   height: initial !important;
   min-height: initial !important;
